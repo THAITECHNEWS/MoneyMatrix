@@ -30,7 +30,7 @@ export default function Header() {
             </div>
           </div>
           
-          <Link href="/mortgages" className="nav-link">Mortgages</Link>
+          <Link href="/mortgages" className="nav-link">AI</Link>
           
           <div className="nav-item">
             <Link href="/personal-finance" className="nav-link">
@@ -38,7 +38,6 @@ export default function Header() {
             </Link>
             <div className="dropdown-menu">
               <Link href="/guides" className="dropdown-item">Financial Guides</Link>
-              <Link href="/calculators" className="dropdown-item">Calculators</Link>
               <Link href="/budgeting" className="dropdown-item">Budgeting</Link>
               <Link href="/investing" className="dropdown-item">Investing</Link>
             </div>

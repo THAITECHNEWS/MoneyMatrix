@@ -9,7 +9,7 @@ export default function Footer() {
   );
   
   const otherCategories = categories.filter(cat => 
-    ['credit-cards', 'mortgages', 'credit-score'].includes(cat.slug)
+    ['credit-cards', 'credit-score'].includes(cat.slug)
   );
 
   return (
@@ -49,8 +49,8 @@ export default function Footer() {
             <h3 className="footer-title">Resources</h3>
             <ul className="footer-links">
               <li><Link href="/guides">Financial Guides</Link></li>
-              <li><Link href="/calculators">Calculators</Link></li>
               <li><Link href="/loan-locator">Loan Locator</Link></li>
+              <li><Link href="/mortgages">AI Tools</Link></li>
             </ul>
           </div>
         </div>

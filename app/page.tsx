@@ -14,7 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function HomePage() {
   const categories = getCategories();
   const featuredCategories = categories.filter(cat => 
-    ['credit-cards', 'personal-loans', 'mortgages', 'auto-loans'].includes(cat.slug)
+    ['credit-cards', 'personal-loans', 'auto-loans'].includes(cat.slug)
   );
   const recentArticles = getRecentArticles(6);
   const allCategories = categories.slice(0, 8);

@@ -12,7 +12,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'MoneyMatrix.me - Compare Financial Products & Make Smart Decisions',
   description: 'Compare loans, credit cards, and financial products. Find the best rates and terms for your financial needs.',
-  keywords: 'loans, credit cards, mortgages, financial products, compare rates',
+    keywords: 'loans, credit cards, AI financial tools, financial products, compare rates',
 };
 
 export default function RootLayout({
