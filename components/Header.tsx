@@ -14,7 +14,7 @@ export default function Header() {
         </div>
         
         <div className="nav-menu">
-          <Link href="/credit-cards" className="nav-link">
+          <Link href="/compare-credit-cards" className="nav-link">
             Credit Cards
           </Link>
           
