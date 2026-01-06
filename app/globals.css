@@ -2586,6 +2586,11 @@ a {
   color: white;
 }
 
+.state-statistics .state-section-title {
+  color: white;
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
