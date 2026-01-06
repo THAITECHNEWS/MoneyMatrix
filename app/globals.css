@@ -175,10 +175,17 @@ a {
   margin-top: 0.5rem;
   z-index: 1000;
   border: 1px solid var(--gray-200);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+  pointer-events: none;
 }
 
 .nav-item:hover .dropdown-menu {
   display: block;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .dropdown-item {
@@ -186,7 +193,7 @@ a {
   padding: 0.625rem 1rem;
   color: var(--gray-700);
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: all 0.15s ease;
   font-size: 0.875rem;
 }
 
