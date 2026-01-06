@@ -525,18 +525,13 @@ export default async function StoreLocatorPage() {
             </section>
 
             {/* Conclusion Section */}
-            <section className="cta-section" style={{ marginTop: '2rem' }}>
-              <h2 className="cta-title">
-                Start Your Search Today
+            <section className="cta-section-compact" style={{ marginTop: '2rem' }}>
+              <h2 className="cta-title-compact">
+                Ready to Find Lenders Near You?
               </h2>
-              <p className="cta-description">
-                Finding the right lender doesn't have to be complicated. Our comprehensive store locator tool makes it easy to 
-                compare options, read reviews, and find trusted financial service providers in your area. Whether you need a payday 
-                loan, personal loan, or other financial services, start your search above to find the best options near you.
-              </p>
-              <p style={{ fontSize: '1rem', opacity: 0.95, maxWidth: '800px', margin: '0 auto' }}>
-                Remember to always borrow responsibly, read all terms carefully, and only work with licensed, reputable lenders. 
-                If you have questions or concerns about a lender, contact your state's financial regulatory agency for assistance.
+              <p className="cta-description-compact">
+                Use our locator tool above to compare rates, read reviews, and find trusted financial service providers in your area. 
+                Always borrow responsibly and work only with licensed, reputable lenders.
               </p>
             </section>
 
