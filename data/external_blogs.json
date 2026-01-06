@@ -1,0 +1,36 @@
+{
+  "external_blogs": [
+    {
+      "platform": "medium",
+      "url": "https://medium.com/@moneymatrix",
+      "api_endpoint": "https://api.medium.com/v1",
+      "enabled": true,
+      "last_posted": null,
+      "posts_count": 0
+    },
+    {
+      "platform": "dev_to",
+      "url": "https://dev.to/moneymatrix",
+      "api_endpoint": "https://dev.to/api",
+      "enabled": true,
+      "last_posted": null,
+      "posts_count": 0
+    },
+    {
+      "platform": "blogger",
+      "url": "https://moneymatrix.blogspot.com",
+      "api_endpoint": "https://www.googleapis.com/blogger/v3",
+      "enabled": true,
+      "last_posted": null,
+      "posts_count": 0
+    },
+    {
+      "platform": "hashnode",
+      "url": "https://moneymatrix.hashnode.dev",
+      "api_endpoint": "https://api.hashnode.com",
+      "enabled": false,
+      "last_posted": null,
+      "posts_count": 0
+    }
+  ]
+}

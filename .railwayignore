@@ -1,0 +1,28 @@
+# Ignore Python files for Next.js deployment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+railway_server.py
+Dockerfile.python-backup
+scripts/
+templates/
+*.log
+
+# Ignore large directories (Railway will build these)
+node_modules/
+.next/
+.vercel/
+
+# Keep data files (needed by Next.js)
+!data/
+
+# TypeScript build info (causes cache mount errors)
+*.tsbuildinfo
+tsconfig.tsbuildinfo

@@ -1,0 +1,7 @@
+# Production dependencies only - minimal for Railway deployment
+requests>=2.31.0
+jinja2>=3.1.2
+python-dateutil>=2.8.2
+python-slugify>=8.0.1
+markupsafe>=2.1.3
+

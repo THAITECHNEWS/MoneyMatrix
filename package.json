@@ -1,0 +1,34 @@
+{
+  "name": "moneymatrix",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "rm -f tsconfig.tsbuildinfo .tsbuildinfo 2>/dev/null || true",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "locations:list": "ts-node --project scripts/tsconfig.json scripts/manage-locations.ts list",
+    "locations:generate": "ts-node --project scripts/tsconfig.json scripts/manage-locations.ts generate",
+    "locations:validate": "ts-node --project scripts/tsconfig.json scripts/manage-locations.ts validate",
+    "locations:suggestions": "ts-node --project scripts/tsconfig.json scripts/manage-locations.ts suggestions",
+    "analyze:payday-questions": "ts-node --project scripts/tsconfig.json scripts/analyze-payday-questions.ts",
+    "generate:payday-article": "ts-node --project scripts/tsconfig.json scripts/generate-payday-article.ts",
+    "generate:specific-article": "ts-node --project scripts/tsconfig.json scripts/generate-specific-article.ts",
+    "generate:featured-image": "ts-node --project scripts/tsconfig.json scripts/generate-featured-image.ts",
+    "publish:payday-article": "ts-node --project scripts/tsconfig.json scripts/publish-payday-article.ts"
+  },
+  "dependencies": {
+    "next": "^14.2.0",
+    "openai": "^6.15.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.3.0"
+  }
+}

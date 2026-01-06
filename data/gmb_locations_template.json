@@ -1,0 +1,39 @@
+[
+  {
+    "name": "MoneyMatrix Payday Loans - Los Angeles",
+    "address": "123 Main Street",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip_code": "90001",
+    "phone": "+1-213-555-0100",
+    "website": "https://moneymatrix.me/locations/payday-loans-in-los-angeles-ca",
+    "primary_category": "Payday Loan Service",
+    "store_code": "LA-PD-001",
+    "loan_types": ["payday-loans", "check-cashing"]
+  },
+  {
+    "name": "MoneyMatrix Title Loans - Los Angeles",
+    "address": "456 Broadway",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip_code": "90002",
+    "phone": "+1-213-555-0101",
+    "website": "https://moneymatrix.me/locations/title-loans-in-los-angeles-ca",
+    "primary_category": "Title Loan Service",
+    "store_code": "LA-TL-001",
+    "loan_types": ["title-loans"]
+  },
+  {
+    "name": "MoneyMatrix Payday Loans - New York",
+    "address": "789 Fifth Avenue",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "10001",
+    "phone": "+1-212-555-0200",
+    "website": "https://moneymatrix.me/locations/payday-loans-in-new-york-ny",
+    "primary_category": "Payday Loan Service",
+    "store_code": "NYC-PD-001",
+    "loan_types": ["payday-loans", "check-cashing"]
+  }
+]
+

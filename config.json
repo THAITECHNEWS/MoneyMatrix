@@ -1,0 +1,92 @@
+{
+  "site": {
+    "name": "MoneyMatrix.me",
+    "url": "https://moneymatrix.me",
+    "description": "Compare financial products and make informed decisions",
+    "keywords": ["financial comparison", "loans", "credit cards", "mortgages", "personal finance"],
+    "author": "MoneyMatrix Team",
+    "language": "en-US"
+  },
+  "content": {
+    "publish_interval_hours": 2,
+    "articles_per_day": 12,
+    "min_word_count": 800,
+    "max_word_count": 1500,
+    "images_per_article": 3,
+    "max_articles_per_category": 50,
+    "auto_generate_variations": true
+  },
+  "features": {
+    "auto_publish": true,
+    "generate_images": true,
+    "create_backlinks": true,
+    "internal_linking": true,
+    "seo_optimization": true,
+    "sitemap_generation": true,
+    "social_sharing": true,
+    "analytics_tracking": false
+  },
+  "ai": {
+    "primary_service": "openai",
+    "primary_model": "gpt-4o-mini",
+    "backup_model": "gpt-3.5-turbo",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "retry_attempts": 3,
+    "retry_delay": 5
+  },
+  "seo": {
+    "meta_description_length": 155,
+    "title_length": 60,
+    "alt_text_length": 125,
+    "keywords_per_article": 10,
+    "internal_links_per_article": 2,
+    "optimize_for_featured_snippets": true
+  },
+  "images": {
+    "preferred_service": "unsplash",
+    "fallback_service": "pixabay",
+    "image_quality": "regular",
+    "min_width": 1200,
+    "min_height": 800,
+    "aspect_ratio_range": [1.2, 2.0],
+    "create_placeholders": true
+  },
+  "backlinks": {
+    "enabled": true,
+    "max_posts_per_run": 3,
+    "delay_between_posts": 60,
+    "platforms": ["medium", "dev_to", "blogger"],
+    "content_length": 300,
+    "publish_as_draft": true
+  },
+  "deployment": {
+    "platform": "cloudflare",
+    "auto_deploy": false,
+    "build_command": "python scripts/html_generation.py",
+    "output_directory": "dist",
+    "cache_duration": 3600,
+    "enable_compression": true
+  },
+  "monitoring": {
+    "log_level": "INFO",
+    "log_file": "moneymatrix.log",
+    "max_log_size": "10MB",
+    "backup_count": 5,
+    "health_check_url": "/api/health"
+  },
+  "security": {
+    "rate_limiting": true,
+    "cors_enabled": false,
+    "security_headers": true,
+    "content_security_policy": true
+  },
+  "performance": {
+    "enable_caching": true,
+    "cache_static_assets": true,
+    "compress_html": true,
+    "minify_css": false,
+    "minify_js": false,
+    "lazy_load_images": true
+  }
+}

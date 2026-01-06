@@ -1,0 +1,47 @@
+{
+  "loanTypes": [
+    {
+      "slug": "payday-loans",
+      "name": "Payday Loans",
+      "keywords": ["payday loans", "cash advance", "payday advance", "short term loans"],
+      "description": "Short-term loans designed to cover expenses until your next paycheck. Quick approval and same-day funding available."
+    },
+    {
+      "slug": "personal-loans",
+      "name": "Personal Loans",
+      "keywords": ["personal loans", "unsecured loans", "installment loans", "bad credit loans"],
+      "description": "Flexible loans for various personal expenses including debt consolidation, home improvement, and major purchases."
+    },
+    {
+      "slug": "installment-loans",
+      "name": "Installment Loans",
+      "keywords": ["installment loans", "monthly payment loans", "fixed payment loans"],
+      "description": "Loans repaid in fixed monthly installments over a set period. Predictable payments and flexible terms."
+    },
+    {
+      "slug": "title-loans",
+      "name": "Title Loans",
+      "keywords": ["title loans", "car title loans", "auto title loans", "vehicle title loans"],
+      "description": "Loans secured by your vehicle title with quick approval. Keep driving while you repay the loan."
+    },
+    {
+      "slug": "check-cashing",
+      "name": "Check Cashing",
+      "keywords": ["check cashing", "cash checks", "check cashing services"],
+      "description": "Convenient check cashing services for immediate access to funds. No bank account required."
+    },
+    {
+      "slug": "pawn-loans",
+      "name": "Pawn Loans",
+      "keywords": ["pawn loans", "pawn shop", "pawn loan"],
+      "description": "Get cash quickly by using valuable items as collateral. Retrieve your items when you repay the loan."
+    },
+    {
+      "slug": "cash-for-gold",
+      "name": "Cash for Gold",
+      "keywords": ["cash for gold", "sell gold", "gold buyers", "we buy gold"],
+      "description": "Sell your gold jewelry, coins, and items for instant cash. Get fair market value for your gold."
+    }
+  ]
+}
+

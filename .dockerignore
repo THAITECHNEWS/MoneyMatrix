@@ -1,0 +1,33 @@
+# Docker ignore file
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.git/
+.gitignore
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.log
+moneymatrix.log
+*.md
+!README.md
+tests/
+test_*.py
+*_test.py
+.pytest_cache/
+.coverage
+htmlcov/
+backup-original-files/
+*.bak
+*.backup
+
+# TypeScript build info (causes Railway cache mount issues)
+*.tsbuildinfo
+tsconfig.tsbuildinfo

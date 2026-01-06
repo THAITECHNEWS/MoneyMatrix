@@ -1,0 +1,347 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <article class="article">
+        <header class="article-header">
+            <nav class="breadcrumb">
+                <a href="/">Home</a> → 
+                <a href="/{{ category_slug }}">{{ category_name }}</a> → 
+                <span>{{ title }}</span>
+            </nav>
+            
+            <h1>{{ title }}</h1>
+            
+            <div class="article-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Published:</span>
+                    <time datetime="{{ date_published }}">{{ date_published_formatted }}</time>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Updated:</span>
+                    <time datetime="{{ date_modified }}">{{ date_modified_formatted }}</time>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Read time:</span>
+                    <span>{{ read_time }} min</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="article-content">
+            {{ content | safe }}
+        </div>
+
+        <footer class="article-footer">
+            <div class="article-tags">
+                {% for tag in tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
+            </div>
+            
+            <div class="article-share">
+                <h4>Share this article:</h4>
+                <div class="share-buttons">
+                    <a href="https://twitter.com/intent/tweet?url={{ url_encoded }}&text={{ title_encoded }}" target="_blank" class="share-btn twitter">Twitter</a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ url_encoded }}" target="_blank" class="share-btn facebook">Facebook</a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ url_encoded }}" target="_blank" class="share-btn linkedin">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+    </article>
+
+    <aside class="related-content">
+        <h3>Related Articles</h3>
+        <div class="related-grid">
+            {% for article in related_articles %}
+            <div class="related-card">
+                <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
+                <p>{{ article.excerpt }}</p>
+                <div class="card-meta">
+                    <span>{{ article.category }}</span>
+                    <span>{{ article.read_time }} min read</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </aside>
+
+    <section class="cta-section">
+        <div class="cta-content">
+            <h3>Ready to Compare {{ category_name }}?</h3>
+            <p>Find the best rates and terms for your financial needs with our comprehensive comparison tools.</p>
+            <div class="cta-buttons">
+                <a href="{{ compare_url }}" class="btn btn-primary">Compare {{ category_name }}</a>
+                <a href="{{ best_url }}" class="btn btn-secondary">See Best Options</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<style>
+/* Article-specific styles */
+.breadcrumb {
+    font-size: var(--text-sm);
+    color: var(--gray-500);
+    margin-bottom: var(--space-6);
+}
+
+.breadcrumb a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.article-header {
+    margin-bottom: var(--space-8);
+    border-bottom: 1px solid var(--gray-200);
+    padding-bottom: var(--space-6);
+}
+
+.article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-6);
+    margin-top: var(--space-4);
+    font-size: var(--text-sm);
+    color: var(--gray-600);
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.meta-label {
+    font-weight: 500;
+}
+
+.article-content {
+    line-height: 1.7;
+    font-size: var(--text-lg);
+}
+
+.article-content h2 {
+    margin-top: var(--space-12);
+    margin-bottom: var(--space-6);
+}
+
+.article-content h3 {
+    margin-top: var(--space-8);
+    margin-bottom: var(--space-4);
+}
+
+.article-content p {
+    margin-bottom: var(--space-6);
+}
+
+.article-content img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    margin: var(--space-8) 0;
+    box-shadow: var(--shadow-md);
+}
+
+.article-footer {
+    margin-top: var(--space-12);
+    padding-top: var(--space-8);
+    border-top: 1px solid var(--gray-200);
+}
+
+.article-tags {
+    margin-bottom: var(--space-6);
+}
+
+.tag {
+    display: inline-block;
+    background: var(--gray-100);
+    color: var(--gray-700);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    margin-right: var(--space-2);
+    margin-bottom: var(--space-2);
+}
+
+.article-share h4 {
+    margin-bottom: var(--space-3);
+    font-size: var(--text-lg);
+}
+
+.share-buttons {
+    display: flex;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+}
+
+.share-btn {
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.share-btn.twitter {
+    background: #1da1f2;
+    color: white;
+}
+
+.share-btn.facebook {
+    background: #4267b2;
+    color: white;
+}
+
+.share-btn.linkedin {
+    background: #0077b5;
+    color: white;
+}
+
+.share-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.related-content {
+    margin-top: var(--space-16);
+    background: white;
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+}
+
+.related-content h3 {
+    margin-bottom: var(--space-6);
+    color: var(--gray-900);
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-6);
+}
+
+.related-card {
+    padding: var(--space-6);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    transition: all 0.2s ease;
+}
+
+.related-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.related-card h4 {
+    margin-bottom: var(--space-3);
+    font-size: var(--text-lg);
+}
+
+.related-card h4 a {
+    color: var(--gray-900);
+    text-decoration: none;
+}
+
+.related-card h4 a:hover {
+    color: var(--primary-color);
+}
+
+.related-card p {
+    color: var(--gray-600);
+    font-size: var(--text-sm);
+    margin-bottom: var(--space-4);
+}
+
+.card-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--text-xs);
+    color: var(--gray-500);
+}
+
+.cta-section {
+    margin-top: var(--space-16);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    padding: var(--space-12) var(--space-8);
+    border-radius: var(--radius-xl);
+    text-align: center;
+}
+
+.cta-content h3 {
+    color: white;
+    margin-bottom: var(--space-4);
+    font-size: var(--text-3xl);
+}
+
+.cta-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-8);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--text-lg);
+}
+
+.cta-buttons .btn-primary {
+    background: white;
+    color: var(--primary-color);
+}
+
+.cta-buttons .btn-primary:hover {
+    background: var(--gray-100);
+    color: var(--primary-dark);
+}
+
+.cta-buttons .btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.cta-buttons .btn-secondary:hover {
+    background: white;
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .article-meta {
+        flex-direction: column;
+        gap: var(--space-2);
+    }
+    
+    .share-buttons {
+        justify-content: center;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+</style>
+{% endblock %}

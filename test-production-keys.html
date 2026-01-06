@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Keys Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: 0 auto; }
+        .test { margin: 20px 0; padding: 15px; border-radius: 5px; }
+        .success { background: #d4edda; border: 1px solid #c3e6cb; color: #155724; }
+        .error { background: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; }
+        .info { background: #d1ecf1; border: 1px solid #bee5eb; color: #0c5460; }
+        #map { width: 100%; height: 400px; margin-top: 20px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <h1>🔑 API Keys Test</h1>
+    
+    <div id="google-maps-test" class="test info">
+        <h3>📍 Testing Google Maps API...</h3>
+        <p>Loading map...</p>
+    </div>
+    
+    <div id="map"></div>
+    
+    <script>
+        // Get API key from environment (in production, this comes from NEXT_PUBLIC_GOOGLE_MAPS_API_KEY)
+        // For testing, you'll need to replace this with your actual key
+        const GOOGLE_MAPS_KEY = 'AIzaSyAXEhrfmgNtavaNkfpvFa7ls5a7hyBAz1g';
+        
+        function testGoogleMaps() {
+            const testDiv = document.getElementById('google-maps-test');
+            
+            // Load Google Maps script
+            const script = document.createElement('script');
+            script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAPS_KEY}&libraries=places&callback=initMap`;
+            script.async = true;
+            script.defer = true;
+            
+            script.onerror = function() {
+                testDiv.className = 'test error';
+                testDiv.innerHTML = `
+                    <h3>❌ Google Maps API: FAILED</h3>
+                    <p>Could not load Google Maps. Check:</p>
+                    <ul>
+                        <li>API key is correct</li>
+                        <li>Maps JavaScript API is enabled</li>
+                        <li>Domain restrictions allow this domain</li>
+                    </ul>
+                `;
+            };
+            
+            document.head.appendChild(script);
+        }
+        
+        function initMap() {
+            const testDiv = document.getElementById('google-maps-test');
+            testDiv.className = 'test success';
+            testDiv.innerHTML = `
+                <h3>✅ Google Maps API: WORKING!</h3>
+                <p>Map loaded successfully. The API key is valid and Maps JavaScript API is enabled.</p>
+            `;
+            
+            // Initialize map
+            const map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 34.0522, lng: -118.2437 },
+                zoom: 12
+            });
+            
+            // Add a marker
+            new google.maps.Marker({
+                position: { lat: 34.0522, lng: -118.2437 },
+                map: map,
+                title: 'Test Location'
+            });
+        }
+        
+        // Start test
+        testGoogleMaps();
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,132 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Auto Loans",
+      "slug": "auto-loans",
+      "compare_url": "https://moneymatrix.me/compare-auto-loans",
+      "best_url": "https://moneymatrix.me/best-auto-loans",
+      "description": "Compare and find the best auto loans for your vehicle purchase"
+    },
+    {
+      "id": 2,
+      "name": "Credit Score",
+      "slug": "credit-score",
+      "compare_url": "https://moneymatrix.me/compare-credit-scores",
+      "best_url": "https://moneymatrix.me/best-credit-score-tools",
+      "description": "Tools and resources to monitor and improve your credit score"
+    },
+    {
+      "id": 3,
+      "name": "Personal Loans",
+      "slug": "personal-loans",
+      "compare_url": "https://moneymatrix.me/compare-personal-loans",
+      "best_url": "https://moneymatrix.me/best-personal-loans",
+      "description": "Find the best personal loans for your financial needs"
+    },
+    {
+      "id": 4,
+      "name": "Mortgages",
+      "slug": "mortgages",
+      "compare_url": "https://moneymatrix.me/compare-mortgages",
+      "best_url": "https://moneymatrix.me/best-mortgages",
+      "description": "Compare mortgage rates and find the best home loans"
+    },
+    {
+      "id": 5,
+      "name": "Business Loans",
+      "slug": "business-loans",
+      "compare_url": "https://moneymatrix.me/compare-business-loans",
+      "best_url": "https://moneymatrix.me/best-business-loans",
+      "description": "Business financing options for entrepreneurs and companies"
+    },
+    {
+      "id": 6,
+      "name": "Regional Loans",
+      "slug": "regional-loans",
+      "compare_url": "https://moneymatrix.me/compare-loans-by-location",
+      "best_url": "https://moneymatrix.me/best-loans-by-location",
+      "description": "Location-specific loan options and regional lenders"
+    },
+    {
+      "id": 7,
+      "name": "Credit Cards",
+      "slug": "credit-cards",
+      "compare_url": "https://moneymatrix.me/compare-credit-cards",
+      "best_url": "https://moneymatrix.me/best-credit-cards",
+      "description": "Compare credit cards and find the best offers"
+    },
+    {
+      "id": 8,
+      "name": "Student Loans",
+      "slug": "student-loans",
+      "compare_url": "https://moneymatrix.me/compare-student-loans",
+      "best_url": "https://moneymatrix.me/best-student-loans",
+      "description": "Student loan options and refinancing opportunities"
+    },
+    {
+      "id": 9,
+      "name": "Rewards & Cashback",
+      "slug": "rewards-cashback",
+      "compare_url": "https://moneymatrix.me/compare-rewards-cards",
+      "best_url": "https://moneymatrix.me/best-rewards-cards",
+      "description": "Maximize rewards and cashback with the best credit cards"
+    },
+    {
+      "id": 10,
+      "name": "Balance Transfers & Debt Management",
+      "slug": "balance-transfers-debt",
+      "compare_url": "https://moneymatrix.me/compare-balance-transfers",
+      "best_url": "https://moneymatrix.me/best-balance-transfer-cards",
+      "description": "Manage debt with balance transfer cards and strategies"
+    },
+    {
+      "id": 11,
+      "name": "Building & Rebuilding Credit",
+      "slug": "building-credit",
+      "compare_url": "https://moneymatrix.me/compare-credit-builder-cards",
+      "best_url": "https://moneymatrix.me/best-credit-builder-cards",
+      "description": "Build or rebuild your credit with the right financial products"
+    },
+    {
+      "id": 12,
+      "name": "Travel & Premium Cards",
+      "slug": "travel-premium-cards",
+      "compare_url": "https://moneymatrix.me/compare-travel-cards",
+      "best_url": "https://moneymatrix.me/best-travel-cards",
+      "description": "Premium travel credit cards with the best perks and rewards"
+    },
+    {
+      "id": 13,
+      "name": "Business Credit Cards",
+      "slug": "business-credit-cards",
+      "compare_url": "https://moneymatrix.me/compare-business-cards",
+      "best_url": "https://moneymatrix.me/best-business-cards",
+      "description": "Business credit cards for company expenses and rewards"
+    },
+    {
+      "id": 14,
+      "name": "Credit Card Protections & Security",
+      "slug": "credit-card-security",
+      "compare_url": "https://moneymatrix.me/compare-secure-credit-cards",
+      "best_url": "https://moneymatrix.me/best-secure-credit-cards",
+      "description": "Secure credit cards with fraud protection and safety features"
+    },
+    {
+      "id": 15,
+      "name": "Advanced Tips & Optimization",
+      "slug": "credit-card-tips",
+      "compare_url": "https://moneymatrix.me/compare-credit-card-strategies",
+      "best_url": "https://moneymatrix.me/best-credit-card-strategies",
+      "description": "Advanced strategies for credit card optimization and rewards"
+    },
+    {
+      "id": 16,
+      "name": "Payday Loans",
+      "slug": "payday-loans",
+      "compare_url": "https://moneymatrix.me/compare-payday-loans",
+      "best_url": "https://moneymatrix.me/best-payday-loans",
+      "description": "Understanding payday loans, alternatives, and responsible borrowing"
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "topics": [
+    {
+      "category_id": 1,
+      "category_slug": "auto-loans",
+      "topics": [
+        "How to Qualify for a Low APR Auto Loan",
+        "Leasing vs. Buying: Which Auto Financing Option Is Right for You?",
+        "Top Auto Loan Mistakes and How to Avoid Them",
+        "Auto Loan Pre-Approval: Why It Matters",
+        "Bad Credit Car Loans: What You Need to Know",
+        "How Mileage and Vehicle Age Affect Your Loan Terms",
+        "The Truth About Zero Down Auto Loans",
+        "Refinancing Your Car Loan: When and How to Do It",
+        "Understanding GAP Insurance and Auto Loan Protection",
+        "How to Get the Best Auto Loan in Your State"
+      ]
+    },
+    {
+      "category_id": 2,
+      "category_slug": "credit-score",
+      "topics": [
+        "How Credit Scores Are Calculated",
+        "Quick Tips to Boost Your Credit Score Fast",
+        "Understanding Credit Utilization and Its Impact",
+        "Credit Score Ranges: What's Good, Fair, or Bad?",
+        "How Long Does It Take to Rebuild Credit?",
+        "Hard vs. Soft Inquiries Explained",
+        "How to Fix Errors on Your Credit Report",
+        "Building Credit from Scratch: A Beginner's Guide",
+        "How to Maintain Excellent Credit",
+        "Does Paying Off a Loan Improve Credit Score?"
+      ]
+    },
+    {
+      "category_id": 3,
+      "category_slug": "personal-loans",
+      "topics": [
+        "Secured vs. Unsecured Personal Loans",
+        "Best Uses for Personal Loans in 2025",
+        "What Is a Good Interest Rate for a Personal Loan?",
+        "Personal Loan Eligibility Requirements",
+        "How to Choose Between a Personal Loan and a Credit Card",
+        "Personal Loans for Debt Consolidation: What to Know",
+        "Personal Loan Red Flags: Avoiding Scams",
+        "How Loan Terms Affect Monthly Payments",
+        "Applying for a Loan Without Hurting Your Credit",
+        "Best Personal Loan Providers by State"
+      ]
+    },
+    {
+      "category_id": 4,
+      "category_slug": "mortgages",
+      "topics": [
+        "Fixed vs. Adjustable Rate Mortgages",
+        "First-Time Homebuyer Loan Programs",
+        "How to Get Pre-Approved for a Mortgage",
+        "Understanding Closing Costs",
+        "How Down Payment Affects Your Loan",
+        "FHA vs. Conventional Loans",
+        "Mortgage Refinancing: When It Makes Sense",
+        "VA Loans: Benefits and Requirements",
+        "Interest Rate Trends in 2025",
+        "Best Mortgage Lenders in Your State"
+      ]
+    },
+    {
+      "category_id": 5,
+      "category_slug": "business-loans",
+      "topics": [
+        "SBA Loans: What You Should Know",
+        "Startup Loans vs. Traditional Business Loans",
+        "How to Qualify for a Business Line of Credit",
+        "Invoice Financing for Small Businesses",
+        "How Business Credit Is Different from Personal Credit",
+        "Equipment Financing Explained",
+        "Working Capital Loans: When to Use Them",
+        "Best Business Loans for Women Entrepreneurs",
+        "Bad Credit Business Loan Options",
+        "Best Lenders for Small Businesses in Your State"
+      ]
+    },
+    {
+      "category_id": 6,
+      "category_slug": "regional-loans",
+      "topics": [
+        "Best Personal Loan Providers in California",
+        "Auto Loans with Low APR in Florida",
+        "Mortgage Rates Comparison in Texas",
+        "Small Business Loans for Startups in New York",
+        "Personal Loans for Bad Credit in Illinois",
+        "First-Time Homebuyer Programs in Georgia",
+        "Where to Find Fast Loans in Arizona",
+        "Debt Consolidation Loans in Ohio",
+        "Best Credit Unions for Loans in Michigan",
+        "Emergency Loans in North Carolina"
+      ]
+    },
+    {
+      "category_id": 7,
+      "category_slug": "credit-cards",
+      "topics": [
+        "Understanding APR, Grace Periods, and Fees",
+        "Secured vs. Unsecured Cards",
+        "Charge Cards vs. Credit Cards",
+        "Credit Card Approval Requirements",
+        "Virtual Credit Cards: Are They Worth It?",
+        "Best Credit Cards for Beginners 2025",
+        "0% APR Credit Card Offers",
+        "High Credit Limit Credit Cards"
+      ]
+    },
+    {
+      "category_id": 8,
+      "category_slug": "student-loans",
+      "topics": [
+        "Federal vs Private Student Loans 2025",
+        "Student Loan Refinancing Benefits",
+        "Student Loan Forgiveness Programs",
+        "Parent PLUS Loan Alternatives",
+        "Graduate School Funding Options",
+        "Student Loan Repayment Plans",
+        "Best Student Loan Servicers",
+        "Student Loan Interest Rates in 2025"
+      ]
+    },
+    {
+      "category_id": 9,
+      "category_slug": "rewards-cashback",
+      "topics": [
+        "Maximizing Cash Back",
+        "Best Travel Reward Cards",
+        "Points vs. Cashback",
+        "Cards for Gas & Groceries",
+        "Sign-Up Bonus Strategies",
+        "Best Cash Back Credit Cards 2025",
+        "Travel Rewards Credit Cards Guide",
+        "Credit Card Sign-Up Bonuses"
+      ]
+    },
+    {
+      "category_id": 10,
+      "category_slug": "balance-transfers-debt",
+      "topics": [
+        "What Is a Balance Transfer?",
+        "Best 0% APR Balance Transfer Cards",
+        "Balance Transfer Mistakes to Avoid",
+        "Comparing Balance Transfers vs. Personal Loans",
+        "Using Transfers to Pay Off Debt Faster",
+        "Balance Transfer Credit Cards Guide",
+        "Debt Consolidation Strategies",
+        "0% Balance Transfer Offers"
+      ]
+    },
+    {
+      "category_id": 11,
+      "category_slug": "building-credit",
+      "topics": [
+        "Credit Cards for Bad Credit",
+        "Student Credit Cards Explained",
+        "Instant Approval Myths",
+        "Secured Cards That Graduate",
+        "Credit Cards After Bankruptcy",
+        "Secured Credit Cards for Bad Credit",
+        "How to Build Credit from Scratch",
+        "Credit Builder Loans Explained"
+      ]
+    },
+    {
+      "category_id": 12,
+      "category_slug": "travel-premium-cards",
+      "topics": [
+        "Luxury Cards with Lounge Access",
+        "Airline-Specific Card Comparison",
+        "Hotel Rewards Maximization",
+        "TSA PreCheck & Global Entry Perks",
+        "Travel Credits: Real Savings?",
+        "Best Travel Credit Cards 2025",
+        "Airport Lounge Access Credit Cards",
+        "Travel Insurance Credit Card Benefits"
+      ]
+    },
+    {
+      "category_id": 13,
+      "category_slug": "business-credit-cards",
+      "topics": [
+        "Personal vs. Business Cards",
+        "Best Cashback Business Cards",
+        "Travel Cards for Businesses",
+        "0% APR for Business Startups",
+        "How to Build Business Credit with Cards",
+        "Best Business Credit Cards 2025",
+        "Business Credit Card Rewards",
+        "Corporate Credit Card Programs"
+      ]
+    },
+    {
+      "category_id": 14,
+      "category_slug": "credit-card-security",
+      "topics": [
+        "Zero Liability Protections",
+        "Virtual Numbers for Safer Shopping",
+        "Credit Card Purchase Protection",
+        "Travel Insurance with Credit Cards",
+        "Disputing Fraudulent Charges",
+        "Credit Card Fraud Protection",
+        "EMV Chip vs Magnetic Stripe",
+        "Contactless Payment Security"
+      ]
+    },
+    {
+      "category_id": 15,
+      "category_slug": "credit-card-tips",
+      "topics": [
+        "Credit Card Churning",
+        "Referral Bonuses and Retention Offers",
+        "Multi-Card Strategy",
+        "Statement Date Utilization Hacks",
+        "Payment Timing to Maximize Score",
+        "Credit Card Portfolio Management",
+        "Optimizing Credit Utilization",
+        "Advanced Rewards Maximization"
+      ]
+    }
+  ]
+}

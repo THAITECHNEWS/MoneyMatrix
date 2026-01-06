@@ -1,0 +1,65 @@
+{
+  "locations": [
+    {
+      "city": "Los Angeles",
+      "state": "California",
+      "stateAbbr": "CA",
+      "zipCodes": ["90001", "90002", "90003", "90004", "90005"],
+      "coordinates": {
+        "lat": 34.0522,
+        "lng": -118.2437
+      },
+      "population": 3967000,
+      "metroArea": "Los Angeles-Long Beach-Anaheim"
+    },
+    {
+      "city": "Chicago",
+      "state": "Illinois",
+      "stateAbbr": "IL",
+      "zipCodes": ["60601", "60602", "60603", "60604", "60605"],
+      "coordinates": {
+        "lat": 41.8781,
+        "lng": -87.6298
+      },
+      "population": 2697000,
+      "metroArea": "Chicago-Naperville-Elgin"
+    },
+    {
+      "city": "Houston",
+      "state": "Texas",
+      "stateAbbr": "TX",
+      "zipCodes": ["77001", "77002", "77003", "77004", "77005"],
+      "coordinates": {
+        "lat": 29.7604,
+        "lng": -95.3698
+      },
+      "population": 2328000,
+      "metroArea": "Houston-The Woodlands-Sugar Land"
+    },
+    {
+      "city": "Phoenix",
+      "state": "Arizona",
+      "stateAbbr": "AZ",
+      "zipCodes": ["85001", "85002", "85003", "85004", "85005"],
+      "coordinates": {
+        "lat": 33.4484,
+        "lng": -112.0740
+      },
+      "population": 1681000,
+      "metroArea": "Phoenix-Mesa-Chandler"
+    },
+    {
+      "city": "Philadelphia",
+      "state": "Pennsylvania",
+      "stateAbbr": "PA",
+      "zipCodes": ["19101", "19102", "19103", "19104", "19105"],
+      "coordinates": {
+        "lat": 39.9526,
+        "lng": -75.1652
+      },
+      "population": 1584000,
+      "metroArea": "Philadelphia-Camden-Wilmington"
+    }
+  ]
+}
+
