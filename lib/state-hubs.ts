@@ -185,7 +185,7 @@ export function getCitiesForState(stateInput: string): CityData[] {
 /**
  * Convert state name or abbreviation to state abbreviation
  */
-function normalizeStateInput(input: string): string {
+export function normalizeStateInput(input: string): string {
   const stateNameToAbbr: Record<string, string> = {
     'california': 'CA',
     'texas': 'TX',
