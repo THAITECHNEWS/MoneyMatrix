@@ -1,4 +1,4 @@
-import { notFound, redirect } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { 
   getLoanTypeBySlug, 
@@ -164,11 +164,7 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
       title: content.metaTitle,
       description: content.metaDescription,
     };
-  } catch (error: any) {
-    // Don't log redirect errors - they're expected Next.js behavior
-    if (error?.digest?.startsWith('NEXT_REDIRECT')) {
-      throw error; // Re-throw redirect errors so Next.js handles them
-    }
+  } catch (error) {
     console.error('Error generating metadata:', error);
     return {
       title: 'Location Not Found',
@@ -183,14 +179,6 @@ export default async function LocationPage({ params }: LocationPageProps) {
     
     if (!slug) {
       notFound();
-    }
-    
-    // Check if slug is just a state name (e.g., "california" or "ca")
-    const slugString = Array.isArray(slug) ? slug.join('/') : slug;
-    const stateData = getStateData(slugString);
-    if (stateData) {
-      // Redirect to state hub page
-      redirect(`/states/${stateData.stateAbbr.toLowerCase()}`);
     }
     
     const parsed = parseLocationSlug(slug);
@@ -449,12 +437,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
       </main>
     </>
     );
-  } catch (error: any) {
-    // Don't log redirect errors - they're expected Next.js behavior
-    // Redirects throw a special error that Next.js catches and handles
-    if (error?.digest?.startsWith('NEXT_REDIRECT')) {
-      throw error; // Re-throw redirect errors so Next.js handles them properly
-    }
+  } catch (error) {
     console.error('Error rendering location page:', error);
     notFound();
   }
