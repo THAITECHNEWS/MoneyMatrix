@@ -6,7 +6,6 @@ import {
   getStoresByService,
   generateLocationSlug 
 } from '@/lib/locations';
-import { getStateData } from '@/lib/state-hubs';
 import { generateLocationPageContent } from '@/lib/content-templates';
 import StoreLocator from '@/components/StoreLocator';
 import QuickQuoteWidget from '@/components/QuickQuoteWidget';
