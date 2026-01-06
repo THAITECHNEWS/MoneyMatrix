@@ -78,6 +78,17 @@ function createExcerpt(content: string, maxLength: number = 200): string {
   return text.substring(0, maxLength).trim() + '...';
 }
 
+function createUrlSlug(slug: string): string {
+  // Convert to lowercase, replace spaces and special chars with hyphens
+  return slug
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '') // Remove special characters except hyphens
+    .replace(/\s+/g, '-') // Replace spaces with hyphens
+    .replace(/-+/g, '-') // Replace multiple hyphens with single hyphen
+    .replace(/^-+|-+$/g, ''); // Remove leading/trailing hyphens
+}
+
 function convertToPublishedArticle(
   generated: GeneratedArticle,
   categoryId: number
@@ -103,9 +114,12 @@ function convertToPublishedArticle(
     ? (generated as any).excerpt 
     : createExcerpt(generated.content);
 
+  // Create URL-friendly slug from the generated slug
+  const urlSlug = createUrlSlug(generated.slug);
+  
   return {
     title: generated.title,
-    slug: generated.slug,
+    slug: urlSlug, // Use URL-friendly slug
     content: articleContent,
     category_id: categoryId,
     category_slug: generated.category,
@@ -113,7 +127,7 @@ function convertToPublishedArticle(
     meta_description: generated.description,
     keywords: generated.keywords,
     tags: tags,
-    url: `/${generated.category}/${generated.slug}`,
+    url: `/${generated.category}/${urlSlug}`, // Use URL-friendly slug in URL
     read_time: readTime,
     date_published: formatDate(now),
     date_modified: formatDate(now),
