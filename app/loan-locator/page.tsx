@@ -4,8 +4,14 @@ import type { Metadata } from 'next';
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: 'Find Lenders Near You | Loan Locator | MoneyMatrix.me',
-    description: 'Find local lenders, loan stores, and financial service providers near you. Search by location, zip code, or address to find the nearest options.',
+    title: 'Find Lenders Near You | Loan Locator Tool | MoneyMatrix.me',
+    description: 'Find local lenders, loan stores, and financial service providers near you. Search by location, zip code, or address. Compare rates, read reviews, and get instant quotes from top-rated lenders in your area.',
+    keywords: 'find lenders near me, loan locator, payday loans near me, personal loans, installment loans, title loans, check cashing, pawn loans, cash for gold, local lenders, financial services',
+    openGraph: {
+      title: 'Find Lenders Near You | Loan Locator Tool',
+      description: 'Compare rates, read reviews, and get instant quotes from top-rated lenders in your area.',
+      type: 'website',
+    },
   };
 }
 
@@ -45,18 +51,20 @@ export default async function StoreLocatorPage() {
                 Find Local Lenders Near You: Your Complete Guide to Finding Financial Services
               </h2>
               <div style={{ fontSize: '1.125rem', lineHeight: 1.8, color: '#374151' }}>
-                <p style={{ marginBottom: '1.5rem' }}>
-                  Finding the right lender in your area can be challenging, especially when you need quick access to financial services. 
-                  Whether you're looking for payday loans, personal loans, installment loans, or other financial products, our comprehensive 
-                  store locator tool helps you find trusted lenders near you. With over 12 million Americans using payday loans annually 
-                  and thousands of lending locations across the United States, having a reliable way to locate nearby financial services 
-                  is essential.
+                <p style={{ marginBottom: '1.5rem', fontSize: '1.25rem', fontWeight: 500 }}>
+                  Use our advanced loan locator tool above to instantly find lenders, compare rates, and get quotes from verified financial service providers in your area. Whether you need payday loans, personal loans, installment loans, title loans, check cashing services, pawn loans, or cash for gold services, our comprehensive search tool helps you find the best options near you.
                 </p>
                 <p style={{ marginBottom: '1.5rem' }}>
-                  Our advanced search tool allows you to find lenders by zip code, city, or address, making it easy to compare options 
-                  in your neighborhood. You can filter results by loan type, distance, and read real customer reviews to make informed 
-                  decisions. This guide will help you understand how to use our locator effectively and what to look for when choosing 
-                  a local lender.
+                  Finding the right lender in your area can be challenging, especially when you need quick access to financial services. 
+                  With over 12 million Americans using payday loans annually and thousands of lending locations across the United States, 
+                  having a reliable way to locate nearby financial services is essential. Our advanced search tool allows you to find lenders 
+                  by zip code, city, or address, making it easy to compare options in your neighborhood. You can filter results by loan type, 
+                  distance, loan amount, and read real customer reviews to make informed decisions.
+                </p>
+                <p style={{ marginBottom: '1.5rem' }}>
+                  This comprehensive guide will help you understand how to use our locator effectively and what to look for when choosing 
+                  a local lender. Learn about different loan types, state regulations, and best practices for finding reputable financial 
+                  service providers in your area.
                 </p>
               </div>
             </section>

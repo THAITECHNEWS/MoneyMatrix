@@ -528,6 +528,40 @@ a {
   .form-row {
     grid-template-columns: 1fr;
   }
+  
+  .service-type-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .service-type-btn {
+    padding: 1rem 0.75rem;
+    min-height: 70px;
+  }
+  
+  .service-name {
+    font-size: 0.875rem;
+  }
+  
+  .loan-amount-selector {
+    padding: 1rem;
+  }
+  
+  .loan-amount-value {
+    font-size: 1.125rem;
+  }
+  
+  .tool-header h1 {
+    font-size: 2rem;
+  }
+  
+  .tool-header p {
+    font-size: 1rem;
+  }
+  
+  .tool-search-form {
+    padding: 1.5rem;
+  }
 }
 
 /* ============================================
@@ -621,6 +655,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   padding: 1.25rem 1rem;
   border: 2px solid var(--gray-300);
@@ -629,28 +664,108 @@ a {
   cursor: pointer;
   transition: all 0.2s ease;
   font-family: var(--font-family);
+  min-height: 80px;
 }
 
 .service-type-btn:hover {
   border-color: var(--primary-color);
   background: var(--gray-50);
   transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
 }
 
 .service-type-btn.active {
   border-color: var(--primary-color);
-  background: rgba(0, 102, 204, 0.05);
-  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
-}
-
-.service-icon {
-  font-size: 2rem;
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.1), rgba(0, 102, 204, 0.05));
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.15);
+  font-weight: 700;
 }
 
 .service-name {
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   color: var(--gray-900);
+  text-align: center;
+  line-height: 1.3;
+}
+
+/* Loan Amount Slider */
+.loan-amount-selector {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.05), rgba(0, 102, 204, 0.02));
+  border-radius: 0.75rem;
+  border: 1px solid rgba(0, 102, 204, 0.1);
+}
+
+.loan-amount-value {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.slider-container {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.loan-amount-slider {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--gray-200);
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.loan-amount-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.loan-amount-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 102, 204, 0.4);
+}
+
+.loan-amount-slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.loan-amount-slider::-moz-range-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 102, 204, 0.4);
+}
+
+.loan-amount-slider::-moz-range-track {
+  height: 8px;
+  border-radius: 4px;
+  background: var(--gray-200);
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--gray-600);
+  font-weight: 500;
 }
 
 .location-inputs {
@@ -658,6 +773,18 @@ a {
   grid-template-columns: 1fr auto 1fr auto 150px auto;
   gap: 1rem;
   align-items: end;
+}
+
+@media (max-width: 1024px) {
+  .location-inputs {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .input-divider {
+    text-align: center;
+    padding-bottom: 0;
+  }
 }
 
 .input-group {

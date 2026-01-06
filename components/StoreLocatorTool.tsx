@@ -1,23 +1,24 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Store } from '@/lib/locations';
 import LeadCaptureForm from './LeadCaptureForm';
 
 const LOAN_TYPES = [
-  { slug: 'payday-loans', name: 'Payday Loans', icon: '💰' },
-  { slug: 'personal-loans', name: 'Personal Loans', icon: '💳' },
-  { slug: 'installment-loans', name: 'Installment Loans', icon: '📅' },
-  { slug: 'title-loans', name: 'Title Loans', icon: '🚗' },
-  { slug: 'check-cashing', name: 'Check Cashing', icon: '💵' },
-  { slug: 'pawn-loans', name: 'Pawn Loans', icon: '🏪' },
-  { slug: 'cash-for-gold', name: 'Cash For Gold', icon: '✨' },
+  { slug: 'payday-loans', name: 'Payday Loans' },
+  { slug: 'personal-loans', name: 'Personal Loans' },
+  { slug: 'installment-loans', name: 'Installment Loans' },
+  { slug: 'title-loans', name: 'Title Loans' },
+  { slug: 'check-cashing', name: 'Check Cashing' },
+  { slug: 'pawn-loans', name: 'Pawn Loans' },
+  { slug: 'cash-for-gold', name: 'Cash For Gold' },
 ];
 
 export default function StoreLocatorTool() {
   const [location, setLocation] = useState('');
   const [zipCode, setZipCode] = useState('');
   const [distance, setDistance] = useState('25');
+  const [loanAmount, setLoanAmount] = useState(1000);
   const [selectedLoanType, setSelectedLoanType] = useState('payday-loans');
   const [stores, setStores] = useState<Store[]>([]);
   const [loading, setLoading] = useState(false);
@@ -28,6 +29,8 @@ export default function StoreLocatorTool() {
   const [selectedStore, setSelectedStore] = useState<Store | null>(null);
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [autocomplete, setAutocomplete] = useState<any>(null);
+  const autocompleteRef = useRef<any>(null);
+  const locationInputRef = useRef<HTMLInputElement>(null);
 
   // Auto-detect user location
   useEffect(() => {
@@ -50,78 +53,122 @@ export default function StoreLocatorTool() {
   useEffect(() => {
     if (typeof window === 'undefined' || mapLoaded) return;
 
-    if ((window as any).google && (window as any).google.maps) {
-      initializeMap();
-      initializeAutocomplete();
-      setMapLoaded(true);
-      return;
-    }
-
-    const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
-    if (!apiKey) return;
-
-    const existingScript = document.querySelector(`script[src*="maps.googleapis.com"]`);
-    if (existingScript) {
-      const checkLoaded = setInterval(() => {
-        if ((window as any).google && (window as any).google.maps) {
-          clearInterval(checkLoaded);
-          initializeMap();
-          initializeAutocomplete();
-          setMapLoaded(true);
-        }
-      }, 100);
-      setTimeout(() => clearInterval(checkLoaded), 10000);
-      return;
-    }
-
-    const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&loading=async`;
-    script.async = true;
-    script.defer = true;
-    script.onload = () => {
+    const loadGoogleMaps = async () => {
+      // Check if already loaded
       if ((window as any).google && (window as any).google.maps) {
         initializeMap();
         initializeAutocomplete();
         setMapLoaded(true);
+        return;
       }
+
+      // Get API key - try client-side first, then it will use server-side in API route
+      const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+      
+      // Check if script already exists
+      const existingScript = document.querySelector(`script[src*="maps.googleapis.com"]`);
+      if (existingScript) {
+        const checkLoaded = setInterval(() => {
+          if ((window as any).google && (window as any).google.maps) {
+            clearInterval(checkLoaded);
+            initializeMap();
+            initializeAutocomplete();
+            setMapLoaded(true);
+          }
+        }, 100);
+        setTimeout(() => clearInterval(checkLoaded), 10000);
+        return;
+      }
+
+      // Load script with language=en to force English
+      const script = document.createElement('script');
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey || ''}&libraries=places&language=en&region=us&loading=async`;
+      script.async = true;
+      script.defer = true;
+      script.onload = () => {
+        if ((window as any).google && (window as any).google.maps) {
+          initializeMap();
+          initializeAutocomplete();
+          setMapLoaded(true);
+        }
+      };
+      script.onerror = () => {
+        console.error('Failed to load Google Maps script');
+        // Still try to initialize autocomplete with server-side key
+        setTimeout(() => {
+          initializeAutocomplete();
+        }, 1000);
+      };
+      document.head.appendChild(script);
     };
-    document.head.appendChild(script);
+
+    loadGoogleMaps();
   }, [mapLoaded]);
 
   // Initialize autocomplete for location input
   const initializeAutocomplete = () => {
-    if (typeof window === 'undefined' || !(window as any).google) return;
+    if (typeof window === 'undefined') return;
     
-    // Wait a bit for DOM to be ready
-    setTimeout(() => {
-      const locationInput = document.getElementById('location') as HTMLInputElement;
-      if (!locationInput || autocomplete) return;
+    // Wait for DOM and Google Maps to be ready
+    const tryInit = () => {
+      if (!(window as any).google || !(window as any).google.maps || !(window as any).google.maps.places) {
+        setTimeout(tryInit, 100);
+        return;
+      }
 
-      const autocompleteInstance = new (window as any).google.maps.places.Autocomplete(locationInput, {
-        types: ['(cities)'],
-        componentRestrictions: { country: 'us' },
-        fields: ['formatted_address', 'geometry', 'name']
-      });
+      const locationInput = locationInputRef.current || document.getElementById('location') as HTMLInputElement;
+      if (!locationInput || autocompleteRef.current) return;
 
-      autocompleteInstance.addListener('place_changed', () => {
-        const place = autocompleteInstance.getPlace();
-        if (place.formatted_address) {
-          setLocation(place.formatted_address);
-          setZipCode('');
-          
-          // Update map center if geometry available
-          if (place.geometry && place.geometry.location && map) {
-            map.setCenter({
-              lat: place.geometry.location.lat(),
-              lng: place.geometry.location.lng()
-            });
-            map.setZoom(12);
+      try {
+        const autocompleteInstance = new (window as any).google.maps.places.Autocomplete(locationInput, {
+          types: ['(cities)'],
+          componentRestrictions: { country: 'us' },
+          fields: ['formatted_address', 'geometry', 'name', 'address_components'],
+          language: 'en', // Force English
+        });
+
+        // Set bounds to US to prioritize US results
+        const bounds = new (window as any).google.maps.LatLngBounds(
+          new (window as any).google.maps.LatLng(24.396308, -125.0),
+          new (window as any).google.maps.LatLng(49.384358, -66.93457)
+        );
+        autocompleteInstance.setBounds(bounds);
+
+        autocompleteInstance.addListener('place_changed', () => {
+          const place = autocompleteInstance.getPlace();
+          if (place.formatted_address) {
+            setLocation(place.formatted_address);
+            setZipCode('');
+            
+            // Extract zip code if available
+            if (place.address_components) {
+              const zipComponent = place.address_components.find((comp: any) => 
+                comp.types.includes('postal_code')
+              );
+              if (zipComponent) {
+                setZipCode(zipComponent.long_name);
+              }
+            }
+            
+            // Update map center if geometry available
+            if (place.geometry && place.geometry.location && map) {
+              map.setCenter({
+                lat: place.geometry.location.lat(),
+                lng: place.geometry.location.lng()
+              });
+              map.setZoom(12);
+            }
           }
-        }
-      });
+        });
 
-      setAutocomplete(autocompleteInstance);
-    }, 500);
+        autocompleteRef.current = autocompleteInstance;
+        setAutocomplete(autocompleteInstance);
+      } catch (err) {
+        console.error('Error initializing autocomplete:', err);
+      }
+    };
+
+    setTimeout(tryInit, 500);
   };
 
   // Re-initialize autocomplete when map loads
@@ -267,6 +314,7 @@ export default function StoreLocatorTool() {
           zipCode: zipCode || undefined,
           distance: parseInt(distance),
           loanType: selectedLoanType,
+          loanAmount: loanAmount,
           apifyApiKey, // Send empty string if not available, server will use env var
         }),
       });
@@ -309,6 +357,15 @@ export default function StoreLocatorTool() {
     }
   };
 
+  const formatCurrency = (amount: number) => {
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0,
+    }).format(amount);
+  };
+
   return (
     <div className="store-locator-tool">
       {/* Header */}
@@ -330,10 +387,33 @@ export default function StoreLocatorTool() {
                 className={`service-type-btn ${selectedLoanType === type.slug ? 'active' : ''}`}
                 onClick={() => setSelectedLoanType(type.slug)}
               >
-                <span className="service-icon">{type.icon}</span>
                 <span className="service-name">{type.name}</span>
               </button>
             ))}
+          </div>
+        </div>
+
+        {/* Loan Amount Slider */}
+        <div className="loan-amount-selector">
+          <label className="form-label" htmlFor="loan-amount">
+            Loan Amount: <span className="loan-amount-value">{formatCurrency(loanAmount)}</span>
+          </label>
+          <div className="slider-container">
+            <input
+              type="range"
+              id="loan-amount"
+              min="100"
+              max="50000"
+              step="100"
+              value={loanAmount}
+              onChange={(e) => setLoanAmount(parseInt(e.target.value))}
+              className="loan-amount-slider"
+            />
+            <div className="slider-labels">
+              <span>$100</span>
+              <span>$25,000</span>
+              <span>$50,000</span>
+            </div>
           </div>
         </div>
 
@@ -342,6 +422,7 @@ export default function StoreLocatorTool() {
           <div className="input-group">
             <label htmlFor="location">City, State or Location</label>
             <input
+              ref={locationInputRef}
               id="location"
               type="text"
               placeholder="Start typing your city or location..."
@@ -406,7 +487,7 @@ export default function StoreLocatorTool() {
       {stores.length > 0 && (
         <div className="results-section">
           <div className="results-header">
-            <h2>🎯 Top {stores.length} Best Deals Near You</h2>
+            <h2>Top {stores.length} Best Deals Near You</h2>
             <p>Compare rates and get instant quotes from verified lenders. Click "Get Quote" to start your application.</p>
           </div>
 
@@ -421,10 +502,10 @@ export default function StoreLocatorTool() {
               {stores.map((store, index) => (
                 <div key={store.id} className="store-card-enhanced">
                   {index === 0 && (
-                    <div className="best-deal-badge">🏆 BEST DEAL</div>
+                    <div className="best-deal-badge">BEST DEAL</div>
                   )}
                   {index >= 1 && index <= 4 && (
-                    <div className="recommended-badge">⭐ RECOMMENDED</div>
+                    <div className="recommended-badge">RECOMMENDED</div>
                   )}
                   <div className="store-header">
                     <h3>{store.name}</h3>
@@ -437,16 +518,16 @@ export default function StoreLocatorTool() {
                   </div>
 
                   <div className="store-info">
-                    <p className="store-address">📍 {store.address}</p>
+                    <p className="store-address">{store.address}</p>
                     <p className="store-location">{store.city}, {store.state} {store.zipCode}</p>
                     {store.phone && (
                       <p className="store-phone">
-                        📞 <a href={`tel:${store.phone}`}>{store.phone}</a>
+                        <a href={`tel:${store.phone}`}>{store.phone}</a>
                       </p>
                     )}
                     {store.website && (
                       <p className="store-website">
-                        🌐 <a href={store.website} target="_blank" rel="noopener noreferrer">Visit Website</a>
+                        <a href={store.website} target="_blank" rel="noopener noreferrer">Visit Website</a>
                       </p>
                     )}
                     {store.services && store.services.length > 0 && (
@@ -496,4 +577,3 @@ export default function StoreLocatorTool() {
     </div>
   );
 }
-
