@@ -2451,6 +2451,95 @@ a {
 /* ============================================
    STATE HUB PAGES
    ============================================ */
+
+/* State Section Titles */
+.state-section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--gray-900);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--gray-200);
+}
+
+/* Loan Types Section */
+.state-loan-types {
+  margin-bottom: 4rem;
+}
+
+.loan-type-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.loan-type-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  border: 1px solid var(--gray-200);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.loan-type-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+}
+
+.loan-type-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 1rem;
+}
+
+.loan-type-description {
+  color: var(--gray-600);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.loan-type-cities-count {
+  font-size: 0.875rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.loan-type-link {
+  display: inline-block;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  margin-top: auto;
+}
+
+.loan-type-link:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+/* City Grids */
+.city-grid-priority1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.city-grid-all {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
 .state-city-link {
   display: block;
   padding: 0.75rem 1rem;
@@ -2470,13 +2559,85 @@ a {
   color: var(--primary-color);
 }
 
+.state-city-link .city-name {
+  display: block;
+  font-weight: 600;
+}
+
+.state-city-link .city-population {
+  display: block;
+  font-size: 0.8125rem;
+  color: var(--gray-500);
+  margin-top: 0.25rem;
+}
+
 .state-city-link-small {
   padding: 0.625rem 0.875rem;
   font-size: 0.875rem;
   text-align: center;
 }
 
+/* State Statistics */
+.state-statistics {
+  margin: 4rem 0;
+  padding: 3rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  border-radius: 1rem;
+  color: white;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+/* State Cities Sections */
+.state-cities-priority1 {
+  margin-bottom: 4rem;
+}
+
+.state-cities-all {
+  margin-bottom: 4rem;
+}
+
 @media (max-width: 768px) {
+  .state-section-title {
+    font-size: 1.5rem;
+  }
+  
+  .loan-type-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .loan-type-card {
+    padding: 1.5rem;
+  }
+  
+  .city-grid-priority1 {
+    grid-template-columns: 1fr;
+  }
+  
+  .city-grid-all {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+  
   .state-city-link {
     padding: 0.625rem 0.875rem;
     font-size: 0.875rem;
@@ -2485,6 +2646,19 @@ a {
   .state-city-link-small {
     padding: 0.5rem 0.75rem;
     font-size: 0.8125rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .state-statistics {
+    padding: 2rem 1.5rem;
   }
 }
 
