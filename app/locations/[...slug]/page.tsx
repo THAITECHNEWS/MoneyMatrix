@@ -139,17 +139,6 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
   try {
     const { slug } = await params;
     
-    // Check if slug is just a state name - return metadata for redirect
-    const slugString = Array.isArray(slug) ? slug.join('/') : slug;
-    const stateData = getStateData(slugString);
-    if (stateData) {
-      // Return metadata for the state page (redirect will happen in component)
-      return {
-        title: `Payday Loans in ${stateData.state} | MoneyMatrix`,
-        description: `Find lenders in ${stateData.state}. Compare rates, read reviews, and apply online.`,
-      };
-    }
-    
     const parsed = parseLocationSlug(slug);
     
     if (!parsed) {

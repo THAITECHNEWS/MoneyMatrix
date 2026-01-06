@@ -38,3 +38,5 @@ OPENAI_API_KEY=your_key_here
 - ✅ **Local `.env.local`** = Development only (optional)
 - ❌ **GitHub** = Never put secrets here!
 
+
+

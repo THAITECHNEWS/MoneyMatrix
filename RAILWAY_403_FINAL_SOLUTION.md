@@ -88,3 +88,5 @@ If `variables` and `logs` work but `up` fails = **CLI upload issue**. Use GitHub
 **Bottom line:** If `railway up` keeps failing, use GitHub integration. It's the most reliable deployment method.
 
 
+
+
