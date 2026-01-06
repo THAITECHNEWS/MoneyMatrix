@@ -177,15 +177,20 @@ a {
   border: 1px solid var(--gray-200);
   opacity: 0;
   transform: translateY(-10px);
-  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.1s, transform 0.2s ease-out 0.1s;
   pointer-events: none;
+  /* Bridge the gap between nav-item and dropdown */
+  padding-top: 0.75rem;
+  margin-top: 0;
 }
 
-.nav-item:hover .dropdown-menu {
+.nav-item:hover .dropdown-menu,
+.dropdown-menu:hover {
   display: block;
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
 }
 
 .dropdown-item {

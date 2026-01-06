@@ -19,7 +19,7 @@ export default function Header() {
           </Link>
           
           <div className="nav-item">
-            <Link href="/personal-loans" className="nav-link">
+            <Link href="/compare-personal-loans" className="nav-link">
               Loans <span className="dropdown-arrow">▼</span>
             </Link>
             <div className="dropdown-menu">
