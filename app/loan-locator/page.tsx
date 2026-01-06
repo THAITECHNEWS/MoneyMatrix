@@ -29,7 +29,7 @@ export default async function StoreLocatorPage() {
           <h1 style={{ fontSize: '2.5rem', fontWeight: 800, marginTop: '1rem', marginBottom: '1rem' }}>
             {heroTitle}
           </h1>
-          <p style={{ fontSize: '1.25rem', color: '#6b7280', marginBottom: '2rem' }}>
+          <p style={{ fontSize: '1.25rem', color: 'white', marginBottom: '2rem' }}>
             {heroDescription}
           </p>
         </div>
@@ -341,7 +341,7 @@ export default async function StoreLocatorPage() {
                   </ul>
                 </div>
 
-                <div style={{ background: '#f0fdf4', borderLeft: '4px solid #22c55e', padding: '1.5rem', marginBottom: '2rem' }}>
+                <div style={{ background: '#eff6ff', borderLeft: '4px solid #3b82f6', padding: '1.5rem', marginBottom: '2rem' }}>
                   <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1rem', color: '#111827' }}>
                     Your Rights as a Borrower
                   </h3>
@@ -357,7 +357,7 @@ export default async function StoreLocatorPage() {
                   </ul>
                 </div>
 
-                <div style={{ background: '#fef3c7', borderLeft: '4px solid #f59e0b', padding: '1.5rem' }}>
+                <div style={{ background: '#eff6ff', borderLeft: '4px solid #3b82f6', padding: '1.5rem' }}>
                   <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1rem', color: '#111827' }}>
                     Red Flags to Avoid
                   </h3>
@@ -525,16 +525,16 @@ export default async function StoreLocatorPage() {
             </section>
 
             {/* Conclusion Section */}
-            <section style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', padding: '3rem', borderRadius: '0.75rem', color: 'white' }}>
-              <h2 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '1rem' }}>
+            <section className="cta-section" style={{ marginTop: '2rem' }}>
+              <h2 className="cta-title">
                 Start Your Search Today
               </h2>
-              <p style={{ fontSize: '1.125rem', marginBottom: '1.5rem', opacity: 0.95 }}>
+              <p className="cta-description">
                 Finding the right lender doesn't have to be complicated. Our comprehensive store locator tool makes it easy to 
                 compare options, read reviews, and find trusted financial service providers in your area. Whether you need a payday 
                 loan, personal loan, or other financial services, start your search above to find the best options near you.
               </p>
-              <p style={{ fontSize: '1rem', opacity: 0.9 }}>
+              <p style={{ fontSize: '1rem', opacity: 0.95, maxWidth: '800px', margin: '0 auto' }}>
                 Remember to always borrow responsibly, read all terms carefully, and only work with licensed, reputable lenders. 
                 If you have questions or concerns about a lender, contact your state's financial regulatory agency for assistance.
               </p>
