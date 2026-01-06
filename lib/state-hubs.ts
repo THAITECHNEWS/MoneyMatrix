@@ -18,6 +18,61 @@ export interface StateData {
   cityCount: number;
 }
 
+// State name mappings for better display
+export const STATE_NAMES: Record<string, string> = {
+  'CA': 'California',
+  'TX': 'Texas',
+  'FL': 'Florida',
+  'NY': 'New York',
+  'IL': 'Illinois',
+  'PA': 'Pennsylvania',
+  'OH': 'Ohio',
+  'GA': 'Georgia',
+  'NC': 'North Carolina',
+  'MI': 'Michigan',
+  'NJ': 'New Jersey',
+  'VA': 'Virginia',
+  'WA': 'Washington',
+  'AZ': 'Arizona',
+  'MA': 'Massachusetts',
+  'TN': 'Tennessee',
+  'IN': 'Indiana',
+  'MO': 'Missouri',
+  'MD': 'Maryland',
+  'WI': 'Wisconsin',
+  'CO': 'Colorado',
+  'MN': 'Minnesota',
+  'SC': 'South Carolina',
+  'AL': 'Alabama',
+  'LA': 'Louisiana',
+  'KY': 'Kentucky',
+  'OR': 'Oregon',
+  'OK': 'Oklahoma',
+  'CT': 'Connecticut',
+  'UT': 'Utah',
+  'IA': 'Iowa',
+  'NV': 'Nevada',
+  'AR': 'Arkansas',
+  'MS': 'Mississippi',
+  'KS': 'Kansas',
+  'NM': 'New Mexico',
+  'NE': 'Nebraska',
+  'WV': 'West Virginia',
+  'ID': 'Idaho',
+  'HI': 'Hawaii',
+  'NH': 'New Hampshire',
+  'ME': 'Maine',
+  'RI': 'Rhode Island',
+  'MT': 'Montana',
+  'DE': 'Delaware',
+  'SD': 'South Dakota',
+  'ND': 'North Dakota',
+  'AK': 'Alaska',
+  'DC': 'District of Columbia',
+  'VT': 'Vermont',
+  'WY': 'Wyoming'
+};
+
 /**
  * Load cities from CSV file
  */

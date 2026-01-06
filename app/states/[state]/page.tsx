@@ -19,7 +19,7 @@ interface StatePageProps {
 export async function generateStaticParams() {
   const states = getAllStates();
   return states.map(state => ({
-    state: state.toLowerCase(),
+    state: state.stateAbbr.toLowerCase(),
   }));
 }
 
