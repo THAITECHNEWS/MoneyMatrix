@@ -136,19 +136,7 @@ export default function StoreSearch({ loanType, onResults, defaultLocation }: St
         </div>
       )}
 
-      {!process.env.NEXT_PUBLIC_APIFY_API_KEY && (
-        <div className="search-warning" style={{
-          marginTop: '1rem',
-          padding: '1rem',
-          background: '#fff3cd',
-          border: '1px solid #ffc107',
-          borderRadius: '0.5rem',
-          color: '#856404',
-          fontSize: '0.875rem'
-        }}>
-          ⚠️ Apify API key not configured. Add NEXT_PUBLIC_APIFY_API_KEY to your environment variables.
-        </div>
-      )}
+      {/* Warning removed - check happens in handleSearch function */}
     </form>
   );
 }

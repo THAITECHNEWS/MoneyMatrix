@@ -10,11 +10,14 @@ interface ApifySearchRequest {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { location, zipCode, distance, loanType, apifyApiKey } = body;
+    const { location, zipCode, distance, loanType, apifyApiKey: clientApiKey } = body;
+
+    // Get API key from client or server-side env (server-side takes precedence)
+    const apifyApiKey = process.env.NEXT_PUBLIC_APIFY_API_KEY || clientApiKey;
 
     if (!apifyApiKey) {
       return NextResponse.json(
-        { error: 'Apify API key is required' },
+        { error: 'Apify API key is required. Please configure NEXT_PUBLIC_APIFY_API_KEY in Railway environment variables and redeploy.' },
         { status: 400 }
       );
     }
