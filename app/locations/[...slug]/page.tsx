@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import Link from 'next/link';
 import { 
   getLoanTypeBySlug, 
@@ -6,6 +6,7 @@ import {
   getStoresByService,
   generateLocationSlug 
 } from '@/lib/locations';
+import { getStateData } from '@/lib/state-hubs';
 import { generateLocationPageContent } from '@/lib/content-templates';
 import StoreLocator from '@/components/StoreLocator';
 import QuickQuoteWidget from '@/components/QuickQuoteWidget';
@@ -137,6 +138,17 @@ function getFeaturedLenders(loanTypeSlug: string, city: string, state: string) {
 export async function generateMetadata({ params }: LocationPageProps): Promise<Metadata> {
   try {
     const { slug } = await params;
+    
+    // Check if slug is just a state name - redirect handled in component
+    const slugString = Array.isArray(slug) ? slug.join('/') : slug;
+    const stateData = getStateData(slugString);
+    if (stateData) {
+      return {
+        title: `Payday Loans in ${stateData.state} | MoneyMatrix`,
+        description: `Find lenders in ${stateData.state}. Compare rates, read reviews, and apply online.`,
+      };
+    }
+    
     const parsed = parseLocationSlug(slug);
     
     if (!parsed) {
@@ -177,6 +189,14 @@ export default async function LocationPage({ params }: LocationPageProps) {
     
     if (!slug) {
       notFound();
+    }
+    
+    // Check if slug is just a state name (e.g., "california" or "ca")
+    const slugString = Array.isArray(slug) ? slug.join('/') : slug;
+    const stateData = getStateData(slugString);
+    if (stateData) {
+      // Redirect to state hub page
+      redirect(`/states/${stateData.stateAbbr.toLowerCase()}`);
     }
     
     const parsed = parseLocationSlug(slug);
