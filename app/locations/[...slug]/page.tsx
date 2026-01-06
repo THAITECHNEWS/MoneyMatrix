@@ -175,7 +175,11 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
       title: content.metaTitle,
       description: content.metaDescription,
     };
-  } catch (error) {
+  } catch (error: any) {
+    // Don't log redirect errors - they're expected Next.js behavior
+    if (error?.digest?.startsWith('NEXT_REDIRECT')) {
+      throw error; // Re-throw redirect errors so Next.js handles them
+    }
     console.error('Error generating metadata:', error);
     return {
       title: 'Location Not Found',
@@ -456,7 +460,12 @@ export default async function LocationPage({ params }: LocationPageProps) {
       </main>
     </>
     );
-  } catch (error) {
+  } catch (error: any) {
+    // Don't log redirect errors - they're expected Next.js behavior
+    // Redirects throw a special error that Next.js catches and handles
+    if (error?.digest?.startsWith('NEXT_REDIRECT')) {
+      throw error; // Re-throw redirect errors so Next.js handles them properly
+    }
     console.error('Error rendering location page:', error);
     notFound();
   }
