@@ -256,12 +256,8 @@ export default function StoreLocatorTool() {
     }
 
     try {
+      // API route will use server-side env var if client-side not available
       const apifyApiKey = process.env.NEXT_PUBLIC_APIFY_API_KEY || '';
-      if (!apifyApiKey) {
-        setError('Service temporarily unavailable. Please try again later.');
-        setLoading(false);
-        return;
-      }
 
       const response = await fetch('/api/search-stores', {
         method: 'POST',
@@ -271,7 +267,7 @@ export default function StoreLocatorTool() {
           zipCode: zipCode || undefined,
           distance: parseInt(distance),
           loanType: selectedLoanType,
-          apifyApiKey,
+          apifyApiKey, // Send empty string if not available, server will use env var
         }),
       });
 
