@@ -110,14 +110,25 @@ export default function StoreLocatorTool() {
     if (typeof window === 'undefined') return;
     
     // Wait for DOM and Google Maps to be ready
-    const tryInit = () => {
+    const tryInit = (attempts = 0) => {
+      if (attempts > 50) {
+        console.warn('Autocomplete initialization timeout');
+        return;
+      }
+
       if (!(window as any).google || !(window as any).google.maps || !(window as any).google.maps.places) {
-        setTimeout(tryInit, 100);
+        setTimeout(() => tryInit(attempts + 1), 200);
         return;
       }
 
       const locationInput = locationInputRef.current || document.getElementById('location') as HTMLInputElement;
-      if (!locationInput || autocompleteRef.current) return;
+      if (!locationInput) {
+        setTimeout(() => tryInit(attempts + 1), 200);
+        return;
+      }
+
+      // Don't reinitialize if already initialized
+      if (autocompleteRef.current) return;
 
       try {
         const autocompleteInstance = new (window as any).google.maps.places.Autocomplete(locationInput, {
@@ -165,10 +176,12 @@ export default function StoreLocatorTool() {
         setAutocomplete(autocompleteInstance);
       } catch (err) {
         console.error('Error initializing autocomplete:', err);
+        // Retry after a delay
+        setTimeout(() => tryInit(attempts + 1), 1000);
       }
     };
 
-    setTimeout(tryInit, 500);
+    setTimeout(() => tryInit(0), 500);
   };
 
   // Re-initialize autocomplete when map loads
