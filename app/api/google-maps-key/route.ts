@@ -13,3 +13,5 @@ export async function GET() {
   return NextResponse.json({ key: apiKey });
 }
 
+
+
