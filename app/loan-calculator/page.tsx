@@ -45,6 +45,257 @@ export default async function LoanCalculatorPage() {
         <div style={{ background: 'white', padding: '5rem 0' }}>
           <div className="container">
             
+            {/* Loan Types Comparison Table Section */}
+            <section style={{ marginBottom: '4rem' }}>
+              <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1rem', color: '#111827' }}>
+                Compare Loan Types: Which Loan is Right for You?
+              </h2>
+              <p style={{ fontSize: '1.125rem', color: '#374151', marginBottom: '2.5rem', lineHeight: 1.8 }}>
+                Different loan types serve different purposes and come with varying terms, rates, and requirements. Use our comparison table below to understand the key differences between popular loan options and find the best fit for your financial needs.
+              </p>
+              
+              <div className="loan-comparison-table-container">
+                <table className="loan-comparison-table">
+                  <thead>
+                    <tr>
+                      <th>Loan Type</th>
+                      <th>Typical APR Range</th>
+                      <th>Loan Amount</th>
+                      <th>Repayment Term</th>
+                      <th>Credit Check</th>
+                      <th>Best For</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Personal Loans</strong></td>
+                      <td>6% - 36%</td>
+                      <td>$1,000 - $50,000</td>
+                      <td>12 - 60 months</td>
+                      <td>Yes, credit score matters</td>
+                      <td>Debt consolidation, major purchases, home improvement</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Auto Loans</strong></td>
+                      <td>3% - 10%</td>
+                      <td>$5,000 - $100,000</td>
+                      <td>24 - 84 months</td>
+                      <td>Yes, credit score matters</td>
+                      <td>Vehicle purchases, refinancing car loans</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Mortgages</strong></td>
+                      <td>3% - 7%</td>
+                      <td>$50,000 - $2M+</td>
+                      <td>15 - 30 years</td>
+                      <td>Yes, extensive credit check</td>
+                      <td>Home purchases, refinancing mortgages</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Student Loans</strong></td>
+                      <td>3% - 13%</td>
+                      <td>$1,000 - $200,000</td>
+                      <td>10 - 25 years</td>
+                      <td>Yes, but more lenient</td>
+                      <td>Education expenses, tuition, living costs</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Payday Loans</strong></td>
+                      <td>300% - 600%+</td>
+                      <td>$100 - $1,000</td>
+                      <td>2 - 4 weeks</td>
+                      <td>Minimal, income-based</td>
+                      <td>Emergency expenses, short-term cash needs</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Title Loans</strong></td>
+                      <td>25% - 300%</td>
+                      <td>$100 - $50,000</td>
+                      <td>15 - 30 days (or longer)</td>
+                      <td>Minimal, vehicle value-based</td>
+                      <td>Quick cash with vehicle as collateral</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Installment Loans</strong></td>
+                      <td>6% - 36%</td>
+                      <td>$500 - $25,000</td>
+                      <td>6 - 60 months</td>
+                      <td>Yes, varies by lender</td>
+                      <td>Predictable monthly payments, flexible terms</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Home Equity Loans</strong></td>
+                      <td>5% - 10%</td>
+                      <td>$10,000 - $500,000</td>
+                      <td>5 - 30 years</td>
+                      <td>Yes, home equity required</td>
+                      <td>Large expenses, home improvements, debt consolidation</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Business Loans</strong></td>
+                      <td>4% - 30%</td>
+                      <td>$5,000 - $5M+</td>
+                      <td>1 - 25 years</td>
+                      <td>Yes, business credit matters</td>
+                      <td>Business expansion, equipment, working capital</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Credit Union Loans</strong></td>
+                      <td>6% - 18%</td>
+                      <td>$500 - $50,000</td>
+                      <td>12 - 84 months</td>
+                      <td>Yes, membership required</td>
+                      <td>Lower rates for members, community-focused</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Detailed Comparison Cards */}
+              <div className="loan-comparison-cards" style={{ marginTop: '3rem' }}>
+                <div className="comparison-card">
+                  <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: '#111827' }}>
+                    Personal Loans
+                  </h3>
+                  <div style={{ marginBottom: '1rem' }}>
+                    <strong style={{ color: '#10b981' }}>Pros:</strong>
+                    <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem', listStyleType: 'disc' }}>
+                      <li>Unsecured (no collateral required)</li>
+                      <li>Fixed monthly payments</li>
+                      <li>Can be used for any purpose</li>
+                      <li>Lower rates than credit cards for good credit</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <strong style={{ color: '#ef4444' }}>Cons:</strong>
+                    <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem', listStyleType: 'disc' }}>
+                      <li>Requires good to excellent credit for best rates</li>
+                      <li>May have origination fees</li>
+                      <li>Rates can be high for poor credit</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="comparison-card">
+                  <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: '#111827' }}>
+                    Auto Loans
+                  </h3>
+                  <div style={{ marginBottom: '1rem' }}>
+                    <strong style={{ color: '#10b981' }}>Pros:</strong>
+                    <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem', listStyleType: 'disc' }}>
+                      <li>Lower interest rates than personal loans</li>
+                      <li>Vehicle serves as collateral</li>
+                      <li>Longer repayment terms available</li>
+                      <li>May include gap insurance</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <strong style={{ color: '#ef4444' }}>Cons:</strong>
+                    <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem', listStyleType: 'disc' }}>
+                      <li>Vehicle can be repossessed if you default</li>
+                      <li>Depreciation affects loan-to-value ratio</li>
+                      <li>May require down payment</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="comparison-card">
+                  <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: '#111827' }}>
+                    Mortgages
+                  </h3>
+                  <div style={{ marginBottom: '1rem' }}>
+                    <strong style={{ color: '#10b981' }}>Pros:</strong>
+                    <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem', listStyleType: 'disc' }}>
+                      <li>Lowest interest rates available</li>
+                      <li>Tax-deductible interest (in many cases)</li>
+                      <li>Build equity over time</li>
+                      <li>Fixed or adjustable rate options</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <strong style={{ color: '#ef4444' }}>Cons:</strong>
+                    <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem', listStyleType: 'disc' }}>
+                      <li>Requires extensive documentation</li>
+                      <li>Closing costs can be significant</li>
+                      <li>Home can be foreclosed if you default</li>
+                      <li>Long-term commitment</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="comparison-card">
+                  <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: '#111827' }}>
+                    Payday Loans
+                  </h3>
+                  <div style={{ marginBottom: '1rem' }}>
+                    <strong style={{ color: '#10b981' }}>Pros:</strong>
+                    <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem', listStyleType: 'disc' }}>
+                      <li>Quick approval and funding</li>
+                      <li>Minimal credit requirements</li>
+                      <li>No collateral needed</li>
+                      <li>Available to borrowers with poor credit</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <strong style={{ color: '#ef4444' }}>Cons:</strong>
+                    <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem', listStyleType: 'disc' }}>
+                      <li>Extremely high interest rates (300%+ APR)</li>
+                      <li>Short repayment terms</li>
+                      <li>Risk of debt cycle</li>
+                      <li>Can lead to financial hardship</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="comparison-card">
+                  <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: '#111827' }}>
+                    Title Loans
+                  </h3>
+                  <div style={{ marginBottom: '1rem' }}>
+                    <strong style={{ color: '#10b981' }}>Pros:</strong>
+                    <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem', listStyleType: 'disc' }}>
+                      <li>Quick access to cash</li>
+                      <li>Keep using your vehicle</li>
+                      <li>Minimal credit requirements</li>
+                      <li>Based on vehicle value</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <strong style={{ color: '#ef4444' }}>Cons:</strong>
+                    <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem', listStyleType: 'disc' }}>
+                      <li>Risk of losing your vehicle</li>
+                      <li>High interest rates</li>
+                      <li>Short repayment terms</li>
+                      <li>Can be expensive if rolled over</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="comparison-card">
+                  <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: '#111827' }}>
+                    Installment Loans
+                  </h3>
+                  <div style={{ marginBottom: '1rem' }}>
+                    <strong style={{ color: '#10b981' }}>Pros:</strong>
+                    <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem', listStyleType: 'disc' }}>
+                      <li>Fixed monthly payments</li>
+                      <li>Predictable repayment schedule</li>
+                      <li>Flexible terms</li>
+                      <li>Better than payday loans for budgeting</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <strong style={{ color: '#ef4444' }}>Cons:</strong>
+                    <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem', listStyleType: 'disc' }}>
+                      <li>May require good credit for best rates</li>
+                      <li>Can have origination fees</li>
+                      <li>Total interest can be high over long terms</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+            
             {/* Introduction Section */}
             <section style={{ marginBottom: '4rem' }}>
               <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem', color: '#111827' }}>

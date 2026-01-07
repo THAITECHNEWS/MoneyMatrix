@@ -2290,6 +2290,103 @@ a {
   color: var(--gray-600);
 }
 
+/* Loan Comparison Table */
+.loan-comparison-table-container {
+  overflow-x: auto;
+  margin-bottom: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.loan-comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 0.9375rem;
+  min-width: 800px;
+}
+
+.loan-comparison-table thead {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: white;
+}
+
+.loan-comparison-table th {
+  padding: 1.25rem 1rem;
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.loan-comparison-table th:last-child {
+  border-right: none;
+}
+
+.loan-comparison-table tbody tr {
+  border-bottom: 1px solid var(--gray-200);
+  transition: background-color 0.2s ease;
+}
+
+.loan-comparison-table tbody tr:hover {
+  background: var(--gray-50);
+}
+
+.loan-comparison-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.loan-comparison-table td {
+  padding: 1rem;
+  color: var(--gray-800);
+  vertical-align: top;
+  border-right: 1px solid var(--gray-200);
+}
+
+.loan-comparison-table td:last-child {
+  border-right: none;
+}
+
+.loan-comparison-table td strong {
+  color: var(--gray-900);
+  font-weight: 700;
+}
+
+.loan-comparison-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.comparison-card {
+  background: white;
+  border: 1px solid var(--gray-200);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 0.1);
+  transition: all 0.2s ease;
+}
+
+.comparison-card:hover {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  transform: translateY(-2px);
+}
+
+.comparison-card ul {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--gray-700);
+}
+
+.comparison-card li {
+  margin-bottom: 0.5rem;
+}
+
 /* Mobile Responsive for Loan Calculator */
 @media (max-width: 768px) {
   .loan-calculator-tool {
@@ -2333,6 +2430,104 @@ a {
   .breakdown-table th,
   .breakdown-table td {
     padding: 0.75rem 0.5rem;
+  }
+
+  /* Loan Comparison Table Mobile */
+  .loan-comparison-table-container {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    border-radius: 0;
+  }
+
+  .loan-comparison-table {
+    font-size: 0.8125rem;
+    min-width: 700px;
+  }
+
+  .loan-comparison-table th {
+    padding: 0.875rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .loan-comparison-table td {
+    padding: 0.875rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+
+  .loan-comparison-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .comparison-card {
+    padding: 1.25rem;
+  }
+
+  .comparison-card h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .loan-comparison-table {
+    font-size: 0.75rem;
+    min-width: 600px;
+  }
+
+  .loan-comparison-table th {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.6875rem;
+  }
+
+  .loan-comparison-table td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* Mobile Responsive Styles for Loan Calculator Page Sections */
+@media (max-width: 768px) {
+  .main-content section h2 {
+    font-size: 2rem !important;
+  }
+
+  .main-content section h3 {
+    font-size: 1.25rem !important;
+  }
+
+  .main-content section p {
+    font-size: 1rem !important;
+  }
+
+  .main-content section ul,
+  .main-content section ol {
+    margin-left: 1.5rem !important;
+  }
+
+  .store-locator-header h1 {
+    font-size: 2rem !important;
+  }
+
+  .store-locator-header p {
+    font-size: 1.125rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content section h2 {
+    font-size: 1.75rem !important;
+  }
+
+  .main-content section h3 {
+    font-size: 1.125rem !important;
+  }
+
+  .store-locator-header h1 {
+    font-size: 1.75rem !important;
+  }
+
+  .store-locator-header p {
+    font-size: 1rem !important;
   }
 }
 
