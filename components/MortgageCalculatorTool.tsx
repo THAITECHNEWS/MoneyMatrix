@@ -371,6 +371,20 @@ export default function MortgageCalculatorTool() {
             </div>
           </div>
 
+          {/* Download Report Button */}
+          <div style={{ marginTop: '1.5rem', textAlign: 'center' }}>
+            <button 
+              type="button"
+              className="download-report-button"
+              onClick={() => setIsModalOpen(true)}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} style={{ width: '20px', height: '20px', marginRight: '0.5rem' }}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              Download Full Report
+            </button>
+          </div>
+
           {/* Additional Info */}
           <div className="mortgage-summary">
             <div className="summary-row">
