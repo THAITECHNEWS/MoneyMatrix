@@ -2387,9 +2387,123 @@ a {
   margin-bottom: 0.5rem;
 }
 
+/* ============================================
+   MORTGAGE CALCULATOR TOOL
+   ============================================ */
+.mortgage-calculator-tool {
+  background: var(--gray-50);
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.down-payment-buttons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.down-payment-btn {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--gray-300);
+  background: white;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--gray-700);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.down-payment-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  background: rgba(0, 102, 204, 0.05);
+}
+
+.down-payment-btn.active {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.loan-term-buttons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.loan-term-btn {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--gray-300);
+  background: white;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--gray-700);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.loan-term-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  background: rgba(0, 102, 204, 0.05);
+}
+
+.loan-term-btn.active {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.mortgage-summary {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--gray-200);
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.summary-row:last-child {
+  border-bottom: none;
+}
+
+.summary-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.summary-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+.result-sublabel {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  margin-top: 0.25rem;
+}
+
+.primary-result {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.1), rgba(0, 102, 204, 0.05));
+  border: 2px solid var(--primary-color);
+}
+
 /* Mobile Responsive for Loan Calculator */
 @media (max-width: 768px) {
-  .loan-calculator-tool {
+  .loan-calculator-tool,
+  .mortgage-calculator-tool {
     padding: 2rem 0;
   }
 
@@ -2417,6 +2531,35 @@ a {
 
   .result-value.primary {
     font-size: 1.75rem;
+  }
+
+  .primary-result {
+    grid-column: 1;
+  }
+
+  .down-payment-buttons,
+  .loan-term-buttons {
+    flex-direction: column;
+  }
+
+  .down-payment-btn,
+  .loan-term-btn {
+    width: 100%;
+  }
+
+  .mortgage-summary {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .summary-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .summary-value {
+    font-size: 1.125rem;
   }
 
   .payment-breakdown {

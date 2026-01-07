@@ -1,0 +1,1523 @@
+{
+  "total_keywords": 699,
+  "kd_ranges": {
+    "0-1": 157,
+    "2-3": 135,
+    "4-5": 140,
+    "6-7": 119,
+    "8-10": 148
+  },
+  "categories": {
+    "insurance": 28,
+    "credit_cards": 92,
+    "calculators": 20,
+    "loans": 20,
+    "banking": 19,
+    "shopping_timing": 16,
+    "taxes": 8,
+    "how_to_guides": 73,
+    "comparisons": 79
+  },
+  "top_keywords": [
+    {
+      "keyword": "oasdi tax",
+      "kd": 1,
+      "volume": 63000,
+      "traffic": 2125,
+      "position": 1,
+      "cpc": "0.03",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/taxes/learn/oasdi-tax"
+    },
+    {
+      "keyword": "academy credit card",
+      "kd": 0,
+      "volume": 55000,
+      "traffic": 5944,
+      "position": 3,
+      "cpc": "1.98",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/academy-credit-card"
+    },
+    {
+      "keyword": "how much is youtube tv",
+      "kd": 6,
+      "volume": 46000,
+      "traffic": 1612,
+      "position": 1,
+      "cpc": "0.74",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/finance/learn/how-much-does-youtube-tv-cost"
+    },
+    {
+      "keyword": "maurices credit card",
+      "kd": 1,
+      "volume": 45000,
+      "traffic": 2501,
+      "position": 7,
+      "cpc": "0.15",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/maurices-credit-card"
+    },
+    {
+      "keyword": "llbean mastercard",
+      "kd": 4,
+      "volume": 45000,
+      "traffic": 1982,
+      "position": 7,
+      "cpc": "0.05",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/5-things-to-know-about-the-l-l-bean-credit-card"
+    },
+    {
+      "keyword": "cri student loans",
+      "kd": 1,
+      "volume": 44000,
+      "traffic": 4125,
+      "position": 4,
+      "cpc": "2.29",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/student-loans/learn/cri-student-loan-servicer"
+    },
+    {
+      "keyword": "tiktok stock",
+      "kd": 8,
+      "volume": 41000,
+      "traffic": 978,
+      "position": 1,
+      "cpc": "1.97",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/investing/learn/tiktok-stock"
+    },
+    {
+      "keyword": "citi strata elite",
+      "kd": 6,
+      "volume": 38000,
+      "traffic": 2310,
+      "position": 6,
+      "cpc": "5.69",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/benefits-of-the-citi-strata-elite"
+    },
+    {
+      "keyword": "capital one cd rates",
+      "kd": 9,
+      "volume": 35000,
+      "traffic": 194,
+      "position": 2,
+      "cpc": "1.80",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/banking/best/1-year-cd-rates"
+    },
+    {
+      "keyword": "msc world america",
+      "kd": 3,
+      "volume": 34000,
+      "traffic": 282,
+      "position": 5,
+      "cpc": "1.46",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/msc-world-america-review"
+    },
+    {
+      "keyword": "belk credit card",
+      "kd": 7,
+      "volume": 33000,
+      "traffic": 1461,
+      "position": 8,
+      "cpc": "0.65",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/belk-credit-card"
+    },
+    {
+      "keyword": "norwegian aqua",
+      "kd": 1,
+      "volume": 33000,
+      "traffic": 209,
+      "position": 6,
+      "cpc": "1.14",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/ncl-aqua-review"
+    },
+    {
+      "keyword": "banana republic credit card",
+      "kd": 3,
+      "volume": 30000,
+      "traffic": 1054,
+      "position": 6,
+      "cpc": "3.00",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/banana-republic-credit-card"
+    },
+    {
+      "keyword": "robinhood gold card",
+      "kd": 6,
+      "volume": 30000,
+      "traffic": 239,
+      "position": 3,
+      "cpc": "1.14",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/robinhood-credit-card"
+    },
+    {
+      "keyword": "hyatt credit card",
+      "kd": 10,
+      "volume": 26000,
+      "traffic": 5095,
+      "position": 2,
+      "cpc": "0.83",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/best-hyatt-credit-card"
+    },
+    {
+      "keyword": "bilt card",
+      "kd": 4,
+      "volume": 26000,
+      "traffic": 1234,
+      "position": 2,
+      "cpc": "2.26",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/bilt-mastercard"
+    },
+    {
+      "keyword": "capital one transfer partners",
+      "kd": 3,
+      "volume": 25000,
+      "traffic": 3324,
+      "position": 1,
+      "cpc": "0.02",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/capital-one-transfer-partners-guide"
+    },
+    {
+      "keyword": "how much is an oil change",
+      "kd": 10,
+      "volume": 25000,
+      "traffic": 211,
+      "position": 3,
+      "cpc": "1.21",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/auto-loans/learn/oil-change-prices"
+    },
+    {
+      "keyword": "forbright bank",
+      "kd": 0,
+      "volume": 21000,
+      "traffic": 1010,
+      "position": 7,
+      "cpc": "2.57",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/banking/reviews/forbright-bank"
+    },
+    {
+      "keyword": "bask bank",
+      "kd": 1,
+      "volume": 20000,
+      "traffic": 957,
+      "position": 7,
+      "cpc": "2.17",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/banking/reviews/bask-bank"
+    },
+    {
+      "keyword": "peloton membership",
+      "kd": 6,
+      "volume": 20000,
+      "traffic": 584,
+      "position": 8,
+      "cpc": "0.08",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/finance/learn/is-peloton-worth-it"
+    },
+    {
+      "keyword": "passport card vs book",
+      "kd": 9,
+      "volume": 20000,
+      "traffic": 313,
+      "position": 8,
+      "cpc": "0.15",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/passport-card-vs-book"
+    },
+    {
+      "keyword": "petal credit card",
+      "kd": 4,
+      "volume": 20000,
+      "traffic": 297,
+      "position": 3,
+      "cpc": "2.51",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/is-the-petal-card-legit"
+    },
+    {
+      "keyword": "what is oasdi tax",
+      "kd": 1,
+      "volume": 20000,
+      "traffic": 296,
+      "position": 1,
+      "cpc": "0.02",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/taxes/learn/oasdi-tax"
+    },
+    {
+      "keyword": "aerolopa",
+      "kd": 0,
+      "volume": 19000,
+      "traffic": 979,
+      "position": 2,
+      "cpc": "0.27",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/aerolopa-seatmap"
+    },
+    {
+      "keyword": "is national debt relief legit",
+      "kd": 4,
+      "volume": 19000,
+      "traffic": 436,
+      "position": 1,
+      "cpc": "5.69",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/personal-loans/learn/national-debt-relief-debt-settlement"
+    },
+    {
+      "keyword": "passport book vs card",
+      "kd": 8,
+      "volume": 19000,
+      "traffic": 191,
+      "position": 9,
+      "cpc": "0.15",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/passport-card-vs-book"
+    },
+    {
+      "keyword": "capital gains tax calculator",
+      "kd": 6,
+      "volume": 18000,
+      "traffic": 5866,
+      "position": 2,
+      "cpc": "1.47",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/taxes/calculators/capital-gains-tax-calculator"
+    },
+    {
+      "keyword": "what is target circle 360",
+      "kd": 6,
+      "volume": 18000,
+      "traffic": 1673,
+      "position": 1,
+      "cpc": "1.21",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/finance/learn/what-is-target-circle-and-how-to-save-money-with-it"
+    },
+    {
+      "keyword": "qbi deduction",
+      "kd": 9,
+      "volume": 18000,
+      "traffic": 1475,
+      "position": 4,
+      "cpc": "0.01",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/business/taxes/learn/qualified-business-income-deduction"
+    },
+    {
+      "keyword": "goodyear credit card",
+      "kd": 5,
+      "volume": 18000,
+      "traffic": 1063,
+      "position": 4,
+      "cpc": "2.70",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/goodyear-credit-card"
+    },
+    {
+      "keyword": "sephora visa credit card",
+      "kd": 1,
+      "volume": 18000,
+      "traffic": 872,
+      "position": 7,
+      "cpc": "1.09",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/sephora-credit-card"
+    },
+    {
+      "keyword": "tik tok stock",
+      "kd": 2,
+      "volume": 18000,
+      "traffic": 314,
+      "position": 2,
+      "cpc": "1.97",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/investing/learn/tiktok-stock"
+    },
+    {
+      "keyword": "kay jewelers credit card",
+      "kd": 5,
+      "volume": 17000,
+      "traffic": 1404,
+      "position": 5,
+      "cpc": "1.16",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/kay-jewelers-credit-card"
+    },
+    {
+      "keyword": "how much is hello fresh",
+      "kd": 8,
+      "volume": 17000,
+      "traffic": 611,
+      "position": 3,
+      "cpc": "1.26",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/finance/learn/how-much-does-hello-fresh-cost"
+    },
+    {
+      "keyword": "chime reviews",
+      "kd": 10,
+      "volume": 17000,
+      "traffic": 490,
+      "position": 1,
+      "cpc": "3.25",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/banking/reviews/chime-banking"
+    },
+    {
+      "keyword": "coast fire calculator",
+      "kd": 6,
+      "volume": 17000,
+      "traffic": 409,
+      "position": 10,
+      "cpc": "1.37",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/retirement/calculators/fire-number-calculator"
+    },
+    {
+      "keyword": "self credit builder",
+      "kd": 10,
+      "volume": 17000,
+      "traffic": 233,
+      "position": 9,
+      "cpc": "2.55",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/personal-loans/learn/self-lender-credit-builder-loans"
+    },
+    {
+      "keyword": "how to fill out a w4 for dummies",
+      "kd": 9,
+      "volume": 16000,
+      "traffic": 2365,
+      "position": 1,
+      "cpc": "0.07",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/taxes/learn/how-to-fill-out-form-w4-guide"
+    },
+    {
+      "keyword": "how to transfer apple cash to bank",
+      "kd": 6,
+      "volume": 16000,
+      "traffic": 940,
+      "position": 7,
+      "cpc": "1.12",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": true,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/banking/learn/how-to-transfer-apple-cash-to-your-bank-account"
+    },
+    {
+      "keyword": "rooms to go credit card",
+      "kd": 7,
+      "volume": 16000,
+      "traffic": 289,
+      "position": 3,
+      "cpc": "1.25",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/rooms-to-go-credit-card"
+    },
+    {
+      "keyword": "how many credit cards should i have",
+      "kd": 7,
+      "volume": 15000,
+      "traffic": 1382,
+      "position": 6,
+      "cpc": "0.08",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/finance/learn/how-many-credit-cards"
+    },
+    {
+      "keyword": "accredited debt relief reviews",
+      "kd": 3,
+      "volume": 15000,
+      "traffic": 599,
+      "position": 3,
+      "cpc": "16.92",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/personal-loans/learn/accredited-debt-relief-debt-settlement"
+    },
+    {
+      "keyword": "backup withholding",
+      "kd": 10,
+      "volume": 15000,
+      "traffic": 437,
+      "position": 1,
+      "cpc": "0.01",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/taxes/learn/what-is-backup-withholding"
+    },
+    {
+      "keyword": "southwest airlines credit card",
+      "kd": 10,
+      "volume": 15000,
+      "traffic": 310,
+      "position": 5,
+      "cpc": "3.17",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/guide-to-earning-southwest-airlines-rapid-reward-points"
+    },
+    {
+      "keyword": "meijer credit card",
+      "kd": 2,
+      "volume": 15000,
+      "traffic": 298,
+      "position": 5,
+      "cpc": "2.85",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/meijer-credit-card"
+    },
+    {
+      "keyword": "academy sports credit card",
+      "kd": 0,
+      "volume": 15000,
+      "traffic": 222,
+      "position": 4,
+      "cpc": "1.98",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/academy-credit-card"
+    },
+    {
+      "keyword": "iul account",
+      "kd": 7,
+      "volume": 15000,
+      "traffic": 149,
+      "position": 1,
+      "cpc": "1.96",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/insurance/life/learn/indexed-universal-life-insurance"
+    },
+    {
+      "keyword": "what is a good credit score to buy a car with no down payment",
+      "kd": 7,
+      "volume": 14000,
+      "traffic": 1345,
+      "position": 1,
+      "cpc": "",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/finance/learn/credit-score-needed-to-buy-car"
+    },
+    {
+      "keyword": "fit credit card",
+      "kd": 10,
+      "volume": 14000,
+      "traffic": 1308,
+      "position": 4,
+      "cpc": "1.84",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/fit-credit-card"
+    },
+    {
+      "keyword": "venture x credit card",
+      "kd": 6,
+      "volume": 14000,
+      "traffic": 859,
+      "position": 7,
+      "cpc": "1.92",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/capital-one-venture-x-card-worth-annual-fee"
+    },
+    {
+      "keyword": "citi strata premier",
+      "kd": 2,
+      "volume": 14000,
+      "traffic": 856,
+      "position": 1,
+      "cpc": "2.49",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/which-citi-strata-credit-card-is-right-for-you"
+    },
+    {
+      "keyword": "youtube tv base plan",
+      "kd": 8,
+      "volume": 14000,
+      "traffic": 650,
+      "position": 1,
+      "cpc": "2.15",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/finance/learn/how-much-does-youtube-tv-cost"
+    },
+    {
+      "keyword": "how to cancel subscriptions on iphone",
+      "kd": 5,
+      "volume": 14000,
+      "traffic": 240,
+      "position": 7,
+      "cpc": "0.12",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/finance/learn/how-to-cancel-subscriptions-on-iphone-ipad-mac"
+    },
+    {
+      "keyword": "delta boarding order",
+      "kd": 7,
+      "volume": 14000,
+      "traffic": 163,
+      "position": 3,
+      "cpc": "0.04",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/delta-boarding-order-explained"
+    },
+    {
+      "keyword": "high risk car insurance",
+      "kd": 10,
+      "volume": 13000,
+      "traffic": 328,
+      "position": 1,
+      "cpc": "0.20",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/insurance/auto/high-risk-auto-insurance-companies"
+    },
+    {
+      "keyword": "london house rooftop",
+      "kd": 8,
+      "volume": 13000,
+      "traffic": 286,
+      "position": 4,
+      "cpc": "0.38",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/londonhouse-chicago-review-splurge-worthy-river-views"
+    },
+    {
+      "keyword": "how much is homeowners insurance",
+      "kd": 10,
+      "volume": 12000,
+      "traffic": 6367,
+      "position": 1,
+      "cpc": "4.36",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/insurance/homeowners/learn/average-homeowners-insurance-cost"
+    },
+    {
+      "keyword": "how much is home insurance",
+      "kd": 10,
+      "volume": 12000,
+      "traffic": 4327,
+      "position": 2,
+      "cpc": "4.15",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/insurance/homeowners/learn/average-homeowners-insurance-cost"
+    },
+    {
+      "keyword": "venture x benefits",
+      "kd": 8,
+      "volume": 12000,
+      "traffic": 935,
+      "position": 6,
+      "cpc": "0.44",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/capital-one-venture-x-card-worth-annual-fee"
+    },
+    {
+      "keyword": "how to get a cashier's check",
+      "kd": 9,
+      "volume": 12000,
+      "traffic": 376,
+      "position": 8,
+      "cpc": "2.92",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/banking/learn/cashiers-check-when-you-need-one-how-to-get-it"
+    },
+    {
+      "keyword": "what is backup withholding",
+      "kd": 1,
+      "volume": 12000,
+      "traffic": 316,
+      "position": 1,
+      "cpc": "0.01",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/taxes/learn/what-is-backup-withholding"
+    },
+    {
+      "keyword": "how much to tip hairdresser",
+      "kd": 6,
+      "volume": 12000,
+      "traffic": 119,
+      "position": 1,
+      "cpc": "0.02",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/finance/learn/how-much-to-tip-hairdresser"
+    },
+    {
+      "keyword": "apy vs interest rate",
+      "kd": 6,
+      "volume": 11000,
+      "traffic": 1709,
+      "position": 1,
+      "cpc": "0.26",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/banking/learn/apy-vs-interest-rate"
+    },
+    {
+      "keyword": "credit card news",
+      "kd": 1,
+      "volume": 11000,
+      "traffic": 1557,
+      "position": 3,
+      "cpc": "2.00",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/news"
+    },
+    {
+      "keyword": "venture x card",
+      "kd": 5,
+      "volume": 11000,
+      "traffic": 1014,
+      "position": 5,
+      "cpc": "1.92",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/capital-one-venture-x-card-worth-annual-fee"
+    },
+    {
+      "keyword": "clear vs tsa precheck",
+      "kd": 5,
+      "volume": 11000,
+      "traffic": 649,
+      "position": 1,
+      "cpc": "0.09",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/is-clear-worth-the-cost"
+    },
+    {
+      "keyword": "genie plus",
+      "kd": 5,
+      "volume": 11000,
+      "traffic": 511,
+      "position": 4,
+      "cpc": "0.40",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/news/disney-world-genie-plus-changes"
+    },
+    {
+      "keyword": "how much do uber drivers make",
+      "kd": 5,
+      "volume": 11000,
+      "traffic": 425,
+      "position": 1,
+      "cpc": "0.79",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/finance/learn/how-much-does-an-uber-driver-make"
+    },
+    {
+      "keyword": "perpay credit card",
+      "kd": 0,
+      "volume": 11000,
+      "traffic": 331,
+      "position": 1,
+      "cpc": "2.37",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/perpay-credit-card"
+    },
+    {
+      "keyword": "amex gold annual fee",
+      "kd": 4,
+      "volume": 11000,
+      "traffic": 311,
+      "position": 4,
+      "cpc": "15.00",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/things-to-know-before-getting-the-amex-gold-card"
+    },
+    {
+      "keyword": "no credit check apartments",
+      "kd": 6,
+      "volume": 11000,
+      "traffic": 311,
+      "position": 9,
+      "cpc": "0.64",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/finance/learn/7-tips-for-getting-an-apartment-without-credit"
+    },
+    {
+      "keyword": "ll bean mastercard",
+      "kd": 3,
+      "volume": 11000,
+      "traffic": 266,
+      "position": 8,
+      "cpc": "1.15",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/5-things-to-know-about-the-l-l-bean-credit-card"
+    },
+    {
+      "keyword": "etf vs index fund",
+      "kd": 10,
+      "volume": 10000,
+      "traffic": 651,
+      "position": 1,
+      "cpc": "0.06",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/investing/learn/etf-vs-index-fund-compare"
+    },
+    {
+      "keyword": "chase cd rates today",
+      "kd": 9,
+      "volume": 10000,
+      "traffic": 554,
+      "position": 4,
+      "cpc": "1.15",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/banking/learn/chase-cd-rates"
+    },
+    {
+      "keyword": "mileage rate 2024",
+      "kd": 6,
+      "volume": 10000,
+      "traffic": 493,
+      "position": 8,
+      "cpc": "0.01",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/taxes/learn/irs-standard-mileage-rate"
+    },
+    {
+      "keyword": "citi strata premier card",
+      "kd": 4,
+      "volume": 10000,
+      "traffic": 319,
+      "position": 1,
+      "cpc": "1.56",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/which-citi-strata-credit-card-is-right-for-you"
+    },
+    {
+      "keyword": "how much does an oil change cost",
+      "kd": 8,
+      "volume": 10000,
+      "traffic": 199,
+      "position": 1,
+      "cpc": "1.27",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/auto-loans/learn/oil-change-prices"
+    },
+    {
+      "keyword": "rare earth minerals stock",
+      "kd": 7,
+      "volume": 9900,
+      "traffic": 165,
+      "position": 1,
+      "cpc": "1.02",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/investing/learn/rare-earth-stocks"
+    },
+    {
+      "keyword": "chase sapphire lounge",
+      "kd": 7,
+      "volume": 9500,
+      "traffic": 119,
+      "position": 3,
+      "cpc": "0.42",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/how-to-get-into-chase-lounge"
+    },
+    {
+      "keyword": "robinhood ira",
+      "kd": 3,
+      "volume": 9300,
+      "traffic": 461,
+      "position": 6,
+      "cpc": "1.96",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/retirement/learn/robinhood-ira-what-you-need-know"
+    },
+    {
+      "keyword": "british airways premium economy",
+      "kd": 9,
+      "volume": 9200,
+      "traffic": 1401,
+      "position": 3,
+      "cpc": "0.29",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/british-airways-premium-economy"
+    },
+    {
+      "keyword": "upgrade credit card",
+      "kd": 4,
+      "volume": 9100,
+      "traffic": 702,
+      "position": 5,
+      "cpc": "0.24",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/upgrade-card-which-one-should-you-get"
+    },
+    {
+      "keyword": "upgrade card",
+      "kd": 9,
+      "volume": 9000,
+      "traffic": 688,
+      "position": 4,
+      "cpc": "0.17",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/upgrade-onecard"
+    },
+    {
+      "keyword": "chase trifecta",
+      "kd": 1,
+      "volume": 8900,
+      "traffic": 8282,
+      "position": 1,
+      "cpc": "0.98",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/what-is-the-chase-trifecta"
+    },
+    {
+      "keyword": "x1 credit card",
+      "kd": 0,
+      "volume": 8800,
+      "traffic": 661,
+      "position": 1,
+      "cpc": "2.55",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/x1-card-no-hard-credit-inquiry-income-over-credit-scores"
+    },
+    {
+      "keyword": "how much do doordash drivers make",
+      "kd": 6,
+      "volume": 8800,
+      "traffic": 298,
+      "position": 5,
+      "cpc": "0.85",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/finance/learn/how-much-does-doordash-pay"
+    },
+    {
+      "keyword": "total credit card",
+      "kd": 5,
+      "volume": 8600,
+      "traffic": 727,
+      "position": 3,
+      "cpc": "0.34",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/total-visa-credit-card"
+    },
+    {
+      "keyword": "fubo tv packages",
+      "kd": 10,
+      "volume": 8500,
+      "traffic": 217,
+      "position": 10,
+      "cpc": "0.16",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/finance/learn/how-much-does-fubo-tv-cost"
+    },
+    {
+      "keyword": "which savings account will earn you the least money?",
+      "kd": 0,
+      "volume": 8400,
+      "traffic": 633,
+      "position": 1,
+      "cpc": "",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/banking/learn/4-ways-to-earn-more-interest-on-savings"
+    },
+    {
+      "keyword": "the edit by chase travel",
+      "kd": 7,
+      "volume": 8400,
+      "traffic": 360,
+      "position": 8,
+      "cpc": "1.84",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/chase-the-edit-hotels-worth-It"
+    },
+    {
+      "keyword": "wealthfront high yield savings",
+      "kd": 3,
+      "volume": 8300,
+      "traffic": 2934,
+      "position": 1,
+      "cpc": "1.68",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/banking/learn/wealthfront-cash-review-2025-online-cash-management-account"
+    },
+    {
+      "keyword": "checking vs savings account",
+      "kd": 5,
+      "volume": 8300,
+      "traffic": 658,
+      "position": 1,
+      "cpc": "0.58",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/banking/learn/checking-vs-savings"
+    },
+    {
+      "keyword": "cabela's credit card",
+      "kd": 5,
+      "volume": 8300,
+      "traffic": 452,
+      "position": 7,
+      "cpc": "1.50",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/5-things-to-know-about-the-cabelas-and-bass-pro-shops-cards"
+    },
+    {
+      "keyword": "dash pass",
+      "kd": 10,
+      "volume": 8300,
+      "traffic": 257,
+      "position": 8,
+      "cpc": "1.33",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/travel/learn/new-chase-doordash-subscription-how-to-get-it-and-how-to-use-it"
+    },
+    {
+      "keyword": "1099 vs w2",
+      "kd": 9,
+      "volume": 8300,
+      "traffic": 224,
+      "position": 1,
+      "cpc": "0.09",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/taxes/learn/1099-vs-w2-difference"
+    },
+    {
+      "keyword": "hawaiian airlines credit card",
+      "kd": 7,
+      "volume": 8100,
+      "traffic": 377,
+      "position": 6,
+      "cpc": "2.09",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/hawaiian-airlines-world-elite-mastercard"
+    },
+    {
+      "keyword": "when is the best time to buy a car",
+      "kd": 8,
+      "volume": 8100,
+      "traffic": 372,
+      "position": 7,
+      "cpc": "0.08",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/auto-loans/learn/when-is-the-best-time-to-buy-a-car"
+    },
+    {
+      "keyword": "can you refinance a car loan",
+      "kd": 6,
+      "volume": 8000,
+      "traffic": 156,
+      "position": 9,
+      "cpc": "1.55",
+      "intent": {
+        "informational": true,
+        "commercial": false,
+        "transactional": false,
+        "branded": false
+      },
+      "url": "https://www.nerdwallet.com/auto-loans/learn/how-to-refinance-your-car-loan"
+    },
+    {
+      "keyword": "michaels credit card",
+      "kd": 0,
+      "volume": 7900,
+      "traffic": 339,
+      "position": 6,
+      "cpc": "1.61",
+      "intent": {
+        "informational": true,
+        "commercial": true,
+        "transactional": false,
+        "branded": true
+      },
+      "url": "https://www.nerdwallet.com/credit-cards/learn/michaels-credit-card"
+    }
+  ]
+}
