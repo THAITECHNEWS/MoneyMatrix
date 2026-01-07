@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import EmailCaptureModal from './EmailCaptureModal';
 
 interface PaymentBreakdown {
   month: number;
@@ -14,6 +15,7 @@ export default function LoanCalculatorTool() {
   const [loanAmount, setLoanAmount] = useState(25000);
   const [interestRate, setInterestRate] = useState(7.5);
   const [loanTerm, setLoanTerm] = useState(60);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Calculate monthly payment using standard amortization formula
   const calculateMonthlyPayment = (principal: number, annualRate: number, months: number): number => {
@@ -202,8 +204,17 @@ export default function LoanCalculatorTool() {
                 ))}
                 {loanTerm > 12 && (
                   <tr className="breakdown-summary">
-                    <td colSpan={5} style={{ textAlign: 'center', padding: '1rem', fontWeight: 600 }}>
-                      ... and {formatNumber(loanTerm - 12)} more payments
+                    <td colSpan={5} style={{ textAlign: 'center', padding: '1rem' }}>
+                      <button 
+                        type="button"
+                        className="download-report-link"
+                        onClick={() => setIsModalOpen(true)}
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} style={{ width: '18px', height: '18px', marginRight: '0.5rem', verticalAlign: 'middle' }}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        Download full report ({formatNumber(loanTerm - 12)} more payments)
+                      </button>
                     </td>
                   </tr>
                 )}
@@ -212,6 +223,14 @@ export default function LoanCalculatorTool() {
           </div>
         </div>
       </div>
+
+      {/* Email Capture Modal */}
+      <EmailCaptureModal 
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        calculatorType="loan"
+        totalPayments={loanTerm}
+      />
     </div>
   );
 }
