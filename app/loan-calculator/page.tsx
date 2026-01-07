@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import LoanCalculatorTool from '@/components/LoanCalculatorTool';
+import LoanFinder from '@/components/LoanFinder';
 import type { Metadata } from 'next';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -39,6 +40,11 @@ export default async function LoanCalculatorPage() {
         {/* Loan Calculator Tool - Client Component */}
         <div style={{ position: 'relative', zIndex: 1 }}>
           <LoanCalculatorTool />
+        </div>
+
+        {/* Loan Finder Section */}
+        <div style={{ background: 'white', padding: '3rem 0' }}>
+          <LoanFinder />
         </div>
 
         {/* SEO Content Sections */}
