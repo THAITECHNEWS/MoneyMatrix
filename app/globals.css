@@ -2562,6 +2562,35 @@ a {
     font-size: 1.125rem;
   }
 
+  /* Mortgage Calculator SEO Content Mobile */
+  .mortgage-seo-content {
+    padding: 0 1rem !important;
+  }
+
+  .mortgage-seo-content > section {
+    padding: 2rem 1.5rem !important;
+    margin-bottom: 3rem !important;
+  }
+
+  .mortgage-seo-content > section h2 {
+    font-size: 2rem !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .mortgage-seo-content > section > div[style*="grid"] {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .mortgage-seo-content > section > div[style*="grid"] > div {
+    padding: 1.5rem !important;
+  }
+
+  .mortgage-seo-content > section > p {
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
   .payment-breakdown {
     padding: 1.5rem;
   }
@@ -2608,6 +2637,54 @@ a {
 
   .comparison-card h3 {
     font-size: 1.25rem;
+  }
+
+  /* Mortgage Calculator SEO Content Mobile */
+  .mortgage-seo-content {
+    padding: 0 1rem !important;
+  }
+
+  .mortgage-seo-content > section {
+    padding: 2rem 1.5rem !important;
+    margin-bottom: 3rem !important;
+  }
+
+  .mortgage-seo-content > section h2 {
+    font-size: 2rem !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .mortgage-seo-content > section > div[style*="grid"] {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .mortgage-seo-content > section > div[style*="grid"] > div {
+    padding: 1.5rem !important;
+  }
+
+  .mortgage-seo-content > section > p {
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .mortgage-seo-content {
+    padding: 0 0.75rem !important;
+  }
+
+  .mortgage-seo-content > section {
+    padding: 1.5rem 1rem !important;
+    margin-bottom: 2.5rem !important;
+  }
+
+  .mortgage-seo-content > section h2 {
+    font-size: 1.75rem !important;
+  }
+
+  .mortgage-seo-content > section > div[style*="grid"] > div {
+    padding: 1.25rem !important;
   }
 }
 
