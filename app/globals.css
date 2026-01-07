@@ -2374,6 +2374,7 @@ a {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  padding-top: 5rem;
   animation: fadeIn 0.2s ease;
 }
 
@@ -2918,7 +2919,8 @@ a {
   .email-modal-content {
     max-width: 100%;
     margin: 1rem;
-    max-height: 90vh;
+    margin-top: 2rem;
+    max-height: 85vh;
   }
 
   .email-modal-header {
@@ -2975,7 +2977,8 @@ a {
 
   .email-modal-content {
     margin: 0.5rem;
-    max-height: 95vh;
+    margin-top: 1rem;
+    max-height: 90vh;
   }
 
   .email-modal-header {
